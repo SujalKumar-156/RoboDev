@@ -1,132 +1,155 @@
-/* 1. General Reset */
+/* --- GLOBAL RESET --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-:root {
-    --bg-color: #050505; /* Deep Black */
-    --text-color: #e0e0e0;
-    --neon-orange: #ff9100; /* Matches the poster */
-    --neon-cyan: #00f3ff;  /* Matches the poster */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* 2. Typography */
-h1, h2, .logo {
-    font-family: 'Orbitron', sans-serif; /* Sci-fi font */
-    text-transform: uppercase;
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* --- VARIABLES (Color Palette) --- */
+:root {
+    --primary-color: #003366; /* NIT Patna Blue */
+    --accent-color: #ff6600; /* Energetic Orange */
+    --dark-bg: #1a1a1a;
+    --light-bg: #ffffff;
 }
 
-.highlight { color: var(--neon-orange); }
-.highlight-cyan { color: var(--neon-cyan); }
-
-/* 3. Navigation */
+/* --- NAVBAR --- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background: rgba(0,0,0,0.8);
-    position: fixed; /* Sticks to top */
-    width: 100%;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
+    background: var(--dark-bg);
     color: white;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: var(--neon-cyan);
-}
-
-/* 4. Hero Section */
-.hero {
-    height: 100vh; /* Full screen height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px var(--neon-cyan); /* Glow effect */
-}
-
-/* 5. Buttons */
-.btn-primary, .btn-glow {
-    padding: 10px 25px;
-    border: 2px solid var(--neon-orange);
-    background: transparent;
-    color: var(--neon-orange);
-    font-family: 'Orbitron', sans-serif;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn-glow:hover {
-    background: var(--neon-orange);
-    color: black;
-    box-shadow: 0 0 20px var(--neon-orange); /* Neon Glow on hover */
-}
-
-/* 6. About Section */
-.about-section {
-    padding: 80px 50px;
-    text-align: center;
-}
-
-.card-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 40px;
-}
-
-.card {
-    background: #111;
-    padding: 30px;
-    border: 1px solid #333;
-    width: 250px;
-    border-radius: 10px;
-}
-
-/* Add this at the end or near the Hero section */
-
-#particles-js {
-    position: absolute; /* Allows it to sit behind other things */
-    width: 100%;
-    height: 100%;
+    padding: 1rem 5%;
+    position: sticky;
     top: 0;
-    left: 0;
-    z-index: 1; /* Low level */
+    z-index: 1000;
 }
 
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--accent-color); }
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    padding: 0;
+}
+
+.nav-logo {
+    height: 60px;
+    width: auto; 
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: white; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent-color); }
+.btn-contact { border: 1px solid var(--accent-color); padding: 5px 15px; border-radius: 5px; }
+/* Prevents the button from shrinking when space is tight */
+.your-button-class {
+    flex-shrink: 0; 
+    white-space: nowrap; /* Stops text from wrapping to two lines */
+}
+.contact-btn {
+    /* 1. FORCE ONE LINE: This is the most important part. 
+       It stops 'Contact' and 'Us' from splitting. */
+    white-space: nowrap;
+    
+    /* 2. REMOVE FIXED HEIGHT: If you have 'height: 45px' or similar defined, 
+       change it to 'auto' or delete it. Use padding for size instead. */
+    height: auto; 
+    padding: 10px 20px; /* Adjust these numbers to match your design height */
+    
+    /* 3. PREVENT SQUISHING: Tells the flex container "Do not shrink me". */
+    flex-shrink: 0;
+    
+    /* 4. ALIGNMENT: Ensures it sits correctly in the navbar */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
+
+/* --- HERO SECTION --- */
 .hero {
-    position: relative; /* Needed to trap the absolute particles inside */
-    /* Your existing styles... */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 2; /* Higher level so text is clickable and visible */
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.cta-button {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* --- GRIDS & CARDS --- */
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+.section-padding { padding: 60px 0; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--primary-color); }
+
+.card-grid-7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.nav-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.nav-card:hover { transform: translateY(-5px); background: var(--primary-color); color: white; }
+.nav-card i { font-size: 2rem; margin-bottom: 10px; color: var(--accent-color); }
+
+.card-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.highlight-card, .info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.highlight-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+
+/* --- ABOUT PAGE SPECIFIC --- */
+.two-col-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.two-col-layout img { width: 100%; border-radius: 10px; }
+.bg-light { background-color: #e9ecef; }
+
+/* --- FOOTER --- */
+footer { background: var(--dark-bg); color: white; padding: 40px 0 10px; margin-top: 50px; }
+.footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.footer-social i { font-size: 1.5rem; margin-left: 15px; color: white; }
+.footer-bottom { text-align: center; margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; }
+
 }

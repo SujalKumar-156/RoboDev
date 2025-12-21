@@ -3,59 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RoboTech Challenge | NIT Patna</title>
-    
-    <link rel="stylesheet" href="css/main.css"> 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>Home | Robotics Club NIT Patna</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">ROBO<span class="highlight">CLUB</span></div>
+        <a href="index.html" class="logo-link">
+    <img src="images/roboticsClubLogo.png" alt="Robotics Club NITP Logo" class="nav-logo">
+</a>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Mission</a></li>
-            <li><a href="contact.html" class="btn-primary">Join Us</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="contact.html" class="btn-contact">Contact Us</a></li>
         </ul>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
 
-    <header id="home" class="hero">
-        <div id="particles-js"></div> 
-
+    <header class="hero">
         <div class="hero-content">
-            <h1>BUILD THE <span class="highlight-cyan">FUTURE</span></h1>
-            <p>Welcome to the Web Development Challenge 2026. <br>Design. Code. Innovate.</p>
-            <button id="exploreBtn" class="btn-glow">Initialize System</button>
-            <p id="status-msg" class="status-text"></p>
+            <h1>CODE FOR FUTURE ROBOTICS</h1>
+            <p>The embodiment of innovation at NIT Patna. We design, build, and code the future.</p>
+            <a href="#quick-nav" class="cta-button">Explore the Club</a>
         </div>
     </header>
 
-    <section id="about" class="about-section">
-        <h2>Our Objective</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>01. Learn</h3>
-                <p>Master HTML, CSS, and JS concepts.</p>
+    <section id="quick-nav" class="container section-padding">
+        <h2 class="section-title">Explore Our World</h2>
+        <div class="card-grid-7">
+            <a href="about.html" class="nav-card">
+                <i class="fas fa-info-circle"></i>
+                <h3>About Us</h3>
+            </a>
+            <a href="projects.html" class="nav-card">
+                <i class="fas fa-robot"></i>
+                <h3>Projects</h3>
+            </a>
+            <a href="events.html" class="nav-card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Events</h3>
+            </a>
+            <a href="team.html" class="nav-card">
+                <i class="fas fa-users"></i>
+                <h3>Our Team</h3>
+            </a>
+            <a href="news.html" class="nav-card">
+                <i class="fas fa-newspaper"></i>
+                <h3>News</h3>
+            </a>
+            <a href="achievements.html" class="nav-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Achievements</h3>
+            </a>
+            <a href="contact.html" class="nav-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Contact</h3>
+            </a>
+        </div>
+    </section>
+
+    <section class="highlights container section-padding">
+        <h2 class="section-title">Club Highlights</h2>
+        <div class="card-grid-3">
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1561557944-6e7860d1a7eb?auto=format&fit=crop&w=500&q=60" alt="Robowars">
+                <h3>Robowars</h3>
+                <p>Our flagship event where bots battle for supremacy in the arena.</p>
             </div>
-            <div class="card">
-                <h3>02. Build</h3>
-                <p>Create stunning interfaces.</p>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a782?auto=format&fit=crop&w=500&q=60" alt="Workshops">
+                <h3>Workshops</h3>
+                <p>Hands-on sessions on 3D Printing, IoT, and Drone technology.</p>
             </div>
-            <div class="card">
-                <h3>03. Deploy</h3>
-                <p>Showcase your work to the world.</p>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=500&q=60" alt="Innovation">
+                <h3>Innovation</h3>
+                <p>Developing AI-based attendance systems and automated restaurant bots.</p>
             </div>
         </div>
     </section>
 
+    <section class="event-teaser section-padding">
+        <div class="container">
+            <h2>Next Big Event: CHAKRAVYUH 2026</h2>
+            <p>Can your bot solve the maze? The ultimate autonomous navigation challenge is coming this January.</p>
+            <a href="events.html" class="btn-secondary">Register Interest</a>
+        </div>
+    </section>
+
     <footer>
-        <p>Created by [Your Name] | NIT Patna Robotics Club Challenge</p>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Robotics Club NITP</h3>
+                <p>Incubation Center 3rd Floor, NIT Patna, Ashok Rajpath - 800005</p>
+                <p>Email: roboticsclub@nitp.ac.in</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Robotics Club NIT Patna. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    
     <script src="js/main.js"></script>
-
 </body>
 </html>
