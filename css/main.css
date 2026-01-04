@@ -152,4 +152,14 @@ footer { background: var(--dark-bg); color: white; padding: 40px 0 10px; margin-
 .footer-social i { font-size: 1.5rem; margin-left: 15px; color: white; }
 .footer-bottom { text-align: center; margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; }
 
-}
+/*project page specifications*/
+#header {text-align: center; align-items: center;justify-content: center;font-size: 30px;background:linear-gradient(135deg,#0f2027, #203a43, #2c5364 );color:white;padding:60px20px;height:160px; display: flex;  }
+.projects-img{color: rgb(237, 241, 241); height: 500px;width: 370px; margin: 30px;text-align: center;align-items: center;justify-content: center;box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+.box{ display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+#projects-container {justify-content: center; align-items: center; }
+.background{ background: rgba(0,0,0,0.7) url('https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=957&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; background-blend-mode: darken; height: 100%;width: 100%;object-fit: cover;}
+
+/*team page specifications*/
+.div-box{display: flex;justify-content: center; align-items: center;flex-wrap: wrap;}
+.contact{ height:50px;width:50px;margin:auto; border: 1px solid rgb(123, 28, 28);background-color: #8e0e0e;border-radius: 50%;display: flex; margin-top: 10px; cursor: pointer;}
+.contact a{margin:auto}

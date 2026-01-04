@@ -30,3 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
        }
     */
 });
+
+/*contact details*/
+let mem=document.getElementsByClassName("members");
+let logo=document.getElementsByClassName("linkedin");
+for(let i=0;i<logo.length;i++){mem[i].addEventListener("mouseenter",()=>{let s=`<a href="#"><i class="fab fa-linkedin"></i></a>`; logo[i].innerHTML=s;logo[i].style.backgroundColor="#981b1bff";
+logo[i].style.border="1px solid #050404ff";logo[i].style.borderRadius="50%";})}
+for(let j=0;j<logo.length;j++){mem[j].addEventListener("mouseleave",()=>{let s=""; logo[j].innerHTML=s;logo[j].style.backgroundColor="transparent";logo[j].style.border="0px";logo[j].style.borderRadius="0px";})}
+
+gsap.from("#header h1",{y:-100,opacity:0,duration:1,})
+gsap.from("#header h4", {y:100, opacity:0,duration:1,delay:1,} ) 
+gsap.from("#icon", {scale:0.5,duration:1,delay:0.5,ease:"back.out(1.7)",repeat:-1,yoyo:true} )

@@ -48,3 +48,37 @@
 .footer-col h3 { color: #fff; margin-bottom: 20px; }
 .social-links a { color: #fff; font-size: 1.5rem; margin-right: 15px; }
 .copyright { text-align: center; padding: 20px; border-top: 1px solid #333; font-size: 0.9rem; color: #888; }
+
+/* --- Projects Page Specific Styles --- */
+#icon{
+   height: 140px; width: 160px; left: 2%; position: absolute;}
+#icon img{
+    height: 100%; width: 100%; object-fit: contain;
+}
+.projects-img img{
+    width: 370px; height: 300px; object-fit: cover;border: 3px solid rgb(138, 6, 6);border-radius: 10px; overflow: hidden;
+}
+.mybox1{  display:none; }
+.btn{ color:red;border:2px solid red;border-radius:5px;padding:5px;background-color:transparent;cursor:pointer;margin-top:20px;}
+.btn:hover{background-color: rgb(149, 31, 31);color: #fff;border:1px solid #fff;}
+.projects-img:hover{ transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+   
+
+#header h4{
+    color: rgb(167, 18, 18);line-height: 1;}
+
+ /*---team page specific styles*/
+.members{color: #fff; height: 300px; width: 250px;  margin: 70px; text-align: center; align-items: center; justify-content: center; }
+.members img{ height: 150px; width: 150px;border: 2px solid #8e1a1a; border-radius: 50%; margin-top: 10px;}
+.members:hover{border: 2px solid #8e1a1a; border-radius: 20px;transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+ .linkedin{ height: 50px; width: 50px; margin: auto;  justify-content: center; align-items: center; display: flex; margin-top: 10px; cursor: pointer; transition: transform 0.3s;}
+ .linkedin:hover{ transform: scale(1.1);}
+#team-faculty{ display: flex; justify-content: center; align-items: center; flex-wrap: wrap;margin-bottom: 50px;}
+.team-img{ height: 200px; width: 200px; border: 3px solid #8e1a1a; border-radius: 50%;object-fit: cover; }
+#words{ margin-top:20px; color: #fff; font-size: 1.2rem; line-height: 1.6rem; width: 600px;}
+ #words h3{opacity:0.6}
+    
+#PI{  margin-bottom:50px;color:#fff; text-align: center; margin-right: 30px;}
+#PI p{font-size:1rem;}
+#faculty{  margin-bottom:50px;color:#fff; text-align: center; margin-left: 30px; }
+.prof:hover{transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
