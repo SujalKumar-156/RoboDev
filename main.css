@@ -1,0 +1,194 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-image: url(imagess/tow-design-hero.jpg);
+  /* background: linear-gradient(to bottom,
+    #667eea, #0f2027, #091333, #054ddfbc); */
+  color: #370606;
+  line-height: 1.6;
+
+}
+
+/* ===== Header ===== */
+header {
+  background: #03182d;
+  color: #fff;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* ===== Section Base ===== */
+section {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #0a2540;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+/* ===== Container Layout ===== */
+.container {
+  height: 30rem;
+  width: 15rem;
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.box > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.img2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 15rem;
+}
+
+/* ===== HOLO CARD EFFECT ===== */
+
+/* 1. Variables for the Effect */
+:root {
+  --color-neutral-900: #1a1a1a; /* Fallback */
+}
+
+/* 2. The Main Card Container */
+.holo-card {
+  /* Dimensions - adapted to match your existing containers */
+  width: 100%;
+  max-width: 35rem; 
+  height: auto;
+  min-height: 25rem;
+  
+  position: relative;
+  border-radius: 1.5em;
+  padding: 2px; /* Space for the border gradient */
+  margin-bottom: 25px;
+  
+  /* The dark background and border gradient */
+  background: linear-gradient(
+      -30deg,
+      var(--gradient-color),
+      transparent,
+      var(--gradient-color)
+    ),
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.7), rgba(10, 10, 30, 0.8));
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* 3. Color Themes */
+/* Orange/Dramatic Theme */
+.holo-card[data-effect="dramatic"] {
+  --f: url(#🌀↖️);
+  --electric-border-color: #ff8c42;   
+  --electric-light-color: #ffdcb8;  
+  --gradient-color: rgba(255, 140, 66, 0.5); 
+}
+
+/* Blue/Hue Theme */
+.holo-card[data-effect="hue"] {
+  --f: url(#🌀↖️); /* Reusing the turbulence filter */
+  --electric-border-color: #007fff;
+  --electric-light-color: #99ccff;
+  --gradient-color: rgba(0, 127, 255, 0.5);
+}
+
+/* 4. Inner Structure */
+.holo-card .inner-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5em;
+  overflow: hidden; /* Ensures content stays inside rounded corners */
+}
+
+/* 5. The "Main Card" (The texture layer) */
+.holo-card .main-card-texture {
+  position: absolute;
+  inset: -10px; /* Stretch slightly outside */
+  border: 3px solid var(--electric-border-color); /* Thicker border */
+  border-radius: 1.5em;
+  filter: var(--f);
+  opacity: 0.8; /* SIGNIFICANTLY INCREASED from 0.3 */
+  pointer-events: none;
+  z-index: 0;
+  mix-blend-mode: screen; /* Helps it glow */
+} 
+
+/* 6. Glow Layers */
+.holo-card .glow-layer-1 {
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--electric-light-color); /* Use light color for inner glow */
+  border-radius: 24px;
+  filter: blur(2px);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.holo-card .background-glow {
+  position: absolute;
+  inset: 0;
+  filter: blur(40px); /* Larger blur */
+  opacity: 0.5;       /* Higher opacity */
+  z-index: -1;
+  background: linear-gradient(
+    -30deg,
+    var(--electric-light-color),
+    transparent,
+    var(--electric-border-color)
+  );
+}
+
+/* 7. Content Container (Where your text/images go) */
+.holo-card .content-container {
+position: relative;
+  z-index: 10;
+  padding: 30px;
+  color: #fff;
+}
+
+/* 8. Text Styling Updates for inside the card */
+.holo-card h2, 
+.holo-card strong {
+  color: var(--electric-light-color);
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.holo-card p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.holo-card img {
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
