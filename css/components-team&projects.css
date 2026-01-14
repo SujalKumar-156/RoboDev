@@ -1,0 +1,84 @@
+/* --- Buttons --- */
+.btn {
+    display: inline-block; padding: 10px 25px; border-radius: 5px;
+    font-weight: bold; transition: var(--transition); cursor: pointer; border: none;
+}
+.btn-primary { background-color: var(--primary-color); color: #000; }
+.btn-primary:hover, .btn-primary.active { background-color: #008ba3; }
+.btn-outline { border: 2px solid var(--primary-color); color: var(--primary-color); background: transparent; }
+.btn-outline:hover { background-color: var(--primary-color); color: #000; }
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: rgba(26, 26, 46, 0.95); padding: 15px 0;
+    position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid #333;
+}
+.nav-container { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.5rem; font-weight: bold; color: #fff; }
+.nav-links { display: flex; gap: 20px; align-items: center; }
+.nav-links a { color: #fff; font-weight: 500; transition: var(--transition); }
+.nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+.hamburger { display: none; cursor: pointer; font-size: 1.5rem; }
+
+/* --- Cards --- */
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+.card {
+    background: var(--card-bg); border-radius: 8px; overflow: hidden;
+    transition: var(--transition); border: 1px solid #333;
+}
+.card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); }
+.card-img { width: 100%; height: 200px; overflow: hidden; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+.card:hover .card-img img { transform: scale(1.05); }
+.card-body { padding: 20px; }
+.card-body h3 { margin-bottom: 10px; color: var(--primary-color); }
+
+/* --- Filter Buttons (Specific to Projects) --- */
+.filter-container { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; flex-wrap: wrap; }
+.filter-btn { padding: 8px 20px; border: 1px solid #555; background: #222; color: #fff; border-radius: 20px; cursor: pointer; transition: var(--transition); }
+.filter-btn:hover, .filter-btn.active { background: var(--primary-color); color: #000; border-color: var(--primary-color); }
+
+/* --- Badges/Tags --- */
+.tech-stack { margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap; }
+.badge { font-size: 0.75rem; padding: 4px 8px; background: rgba(0, 188, 212, 0.1); color: var(--primary-color); border-radius: 4px; }
+
+/* --- Footer --- */
+.footer { background: #0f1218; padding-top: 50px; border-top: 2px solid var(--primary-color); }
+.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; }
+.footer-col h3 { color: #fff; margin-bottom: 20px; }
+.social-links a { color: #fff; font-size: 1.5rem; margin-right: 15px; }
+.copyright { text-align: center; padding: 20px; border-top: 1px solid #333; font-size: 0.9rem; color: #888; }
+
+/* --- Projects Page Specific Styles --- */
+#icon{
+   height: 140px; width: 160px; left: 2%; position: absolute;}
+#icon img{
+    height: 100%; width: 100%; object-fit: contain;
+}
+.projects-img img{
+    width: 370px; height: 300px; object-fit: cover;border: 3px solid rgb(138, 6, 6);border-radius: 10px; overflow: hidden;
+}
+.mybox1{  display:none; }
+.btn{ color:red;border:2px solid red;border-radius:5px;padding:5px;background-color:transparent;cursor:pointer;margin-top:20px;}
+.btn:hover{background-color: rgb(149, 31, 31);color: #fff;border:1px solid #fff;}
+.projects-img:hover{ transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+   
+
+#header h4{
+    color: rgb(167, 18, 18);line-height: 1;}
+
+ /*---team page specific styles*/
+.members{color: #fff; height: 300px; width: 250px;  margin: 70px; text-align: center; align-items: center; justify-content: center; }
+.members img{ height: 150px; width: 150px;border: 2px solid #8e1a1a; border-radius: 50%; margin-top: 10px;}
+.members:hover{border: 2px solid #8e1a1a; border-radius: 20px;transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+ .linkedin{ height: 50px; width: 50px; margin: auto;  justify-content: center; align-items: center; display: flex; margin-top: 10px; cursor: pointer; transition: transform 0.3s;}
+ .linkedin:hover{ transform: scale(1.1);}
+#team-faculty{ display: flex; justify-content: center; align-items: center; flex-wrap: wrap;margin-bottom: 50px;}
+.team-img{ height: 200px; width: 200px; border: 3px solid #8e1a1a; border-radius: 50%;object-fit: cover; }
+#words{ margin-top:20px; color: #fff; font-size: 1.2rem; line-height: 1.6rem; width: 600px;}
+ #words h3{opacity:0.6}
+    
+#PI{  margin-bottom:50px;color:#fff; text-align: center; margin-right: 30px;}
+#PI p{font-size:1rem;}
+#faculty{  margin-bottom:50px;color:#fff; text-align: center; margin-left: 30px; }
+.prof:hover{transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}

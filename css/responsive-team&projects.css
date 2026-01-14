@@ -1,0 +1,14 @@
+/* --- RESPONSIVE (MOBILE) --- */
+@media (max-width: 830px) {
+    .nav-links { display: none; } /* JS will toggle this later */
+    .hamburger { display: block; }
+    .hero h1 { font-size: 2rem; }
+    .two-col-layout { grid-template-columns: 1fr; }}
+
+    @media(max-width:830px){
+        .box{flex-wrap: wrap; }
+        .projects-img{margin-bottom: 500px;}
+        #words{margin-left: 10px;margin-right: 10px;}
+        #PI{margin-top: 20px;}
+
+    }

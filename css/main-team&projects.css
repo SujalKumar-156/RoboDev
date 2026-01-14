@@ -1,0 +1,165 @@
+/* --- GLOBAL RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* --- VARIABLES (Color Palette) --- */
+:root {
+    --primary-color: #003366; /* NIT Patna Blue */
+    --accent-color: #ff6600; /* Energetic Orange */
+    --dark-bg: #1a1a1a;
+    --light-bg: #ffffff;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--dark-bg);
+    color: white;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; color: var(--accent-color); }
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    padding: 0;
+}
+
+.nav-logo {
+    height: 60px;
+    width: auto; 
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links { display: flex; gap: 20px; }
+.nav-links a { color: white; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--accent-color); }
+.btn-contact { border: 1px solid var(--accent-color); padding: 5px 15px; border-radius: 5px; }
+/* Prevents the button from shrinking when space is tight */
+.your-button-class {
+    flex-shrink: 0; 
+    white-space: nowrap; /* Stops text from wrapping to two lines */
+}
+.contact-btn {
+    /* 1. FORCE ONE LINE: This is the most important part. 
+       It stops 'Contact' and 'Us' from splitting. */
+    white-space: nowrap;
+    
+    /* 2. REMOVE FIXED HEIGHT: If you have 'height: 45px' or similar defined, 
+       change it to 'auto' or delete it. Use padding for size instead. */
+    height: auto; 
+    padding: 10px 20px; /* Adjust these numbers to match your design height */
+    
+    /* 3. PREVENT SQUISHING: Tells the flex container "Do not shrink me". */
+    flex-shrink: 0;
+    
+    /* 4. ALIGNMENT: Ensures it sits correctly in the navbar */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.hamburger { display: none; font-size: 1.5rem; cursor: pointer; }
+
+/* --- HERO SECTION --- */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; }
+.cta-button {
+    background: var(--accent-color);
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* --- GRIDS & CARDS --- */
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+.section-padding { padding: 60px 0; }
+.section-title { text-align: center; margin-bottom: 40px; font-size: 2rem; color: var(--primary-color); }
+
+.card-grid-7 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.nav-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.nav-card:hover { transform: translateY(-5px); background: var(--primary-color); color: white; }
+.nav-card i { font-size: 2rem; margin-bottom: 10px; color: var(--accent-color); }
+
+.card-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.highlight-card, .info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.highlight-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+
+/* --- ABOUT PAGE SPECIFIC --- */
+.two-col-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.two-col-layout img { width: 100%; border-radius: 10px; }
+.bg-light { background-color: #e9ecef; }
+
+/* --- FOOTER --- */
+footer { background: var(--dark-bg); color: white; padding: 40px 0 10px; margin-top: 50px; }
+.footer-content { display: flex; justify-content: space-between; flex-wrap: wrap; }
+.footer-social i { font-size: 1.5rem; margin-left: 15px; color: white; }
+.footer-bottom { text-align: center; margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; }
+
+/*project page specifications*/
+#header {text-align: center; align-items: center;justify-content: center;font-size: 30px;background:linear-gradient(135deg,#0f2027, #203a43, #2c5364 );color:white;padding:60px20px;height:160px; display: flex;  }
+.projects-img{color: rgb(237, 241, 241); height: 500px;width: 370px; margin: 30px;text-align: center;align-items: center;justify-content: center;box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+.box{ display: flex;justify-content: center;align-items: center;flex-wrap: wrap;}
+#projects-container {justify-content: center; align-items: center; }
+.background{ background: rgba(0,0,0,0.7) url('https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=957&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; background-blend-mode: darken; height: 100%;width: 100%;object-fit: cover;}
+
+/*team page specifications*/
+.div-box{display: flex;justify-content: center; align-items: center;flex-wrap: wrap;}
+.contact{ height:50px;width:50px;margin:auto; border: 1px solid rgb(123, 28, 28);background-color: #8e0e0e;border-radius: 50%;display: flex; margin-top: 10px; cursor: pointer;}
+.contact a{margin:auto}
