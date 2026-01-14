@@ -1,9 +1,106 @@
-/* --- RESPONSIVE (MOBILE) --- */
-@media (max-width: 830px) {
-    .nav-links { display: none; } /* JS will toggle this later */
-    .hamburger { display: block; }
-    .hero h1 { font-size: 2rem; }
-    .two-col-layout { grid-template-columns: 1fr; }}
+    /* Sujal */
+
+    /* ================== MEDIA QUERIES & RESPONSIVE DESIGN ================== */
+
+@media (max-width: 768px) {
+    /* --- Layout & Typography Adjustments --- */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .fixed-logo {
+        left: 20px;
+        top: 25px; /* Aligns better with the hamburger menu */
+    }
+
+    .fixed-logo img {
+        width: 25vw; 
+        min-width: 90px;
+        max-width: 120px;
+    }
+
+    .social-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    /* --- Navigation Bar Mobile Mode --- */
+    .hamburger-menu {
+        display: flex; 
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100dvh; /* Full Height */
+        margin: 0;
+        padding: 0;
+        background: rgba(19, 8, 2, 0.95); /* Dark background */
+        backdrop-filter: blur(20px);
+        transform: translateY(-100%); /* Hidden by default */
+        transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        border-radius: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1003;
+    }
+
+    nav.mobile-active {
+        transform: translateY(0); /* Slide down */
+    }
+
+    nav > ul {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav > ul li a {
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    nav > ul::after {
+        display: none !important;
+    }
+
+    /* --- Footer Mobile Adjustments --- */
+    .site-footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-contact p {
+        justify-content: center; 
+    }
+
+    /* Force social icons to center */
+    .social-icons {
+        justify-content: center !important;
+    }
+
+    /* --- Hide Page Navigation on Mobile --- */
+    .page-navigation {
+        display: none;
+    }
+}   
+
+    /* Mahi */
 
     @media(max-width:830px){
         .box{flex-wrap: wrap; }
