@@ -113,11 +113,14 @@ body {
     text-align: center;
 }
 
-/* ================== FOOTER LAYOUT ================== */
+/* ================== COMPACT FOOTER LAYOUT ================== */
 .site-footer {
     background: linear-gradient(to top, #000000, #130802);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding: 40px 0 38px;
+    
+    /* Reduced Padding (Top/Bottom) */
+    padding: 30px 0 15px; 
+    
     text-align: center;
     position: relative;
     z-index: 10;
@@ -131,7 +134,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    gap: 40px;
+    gap: 30px;
     text-align: left;
 }
 
@@ -140,26 +143,30 @@ body {
     min-width: 280px;
 }
 
+/* Smaller Headings */
 .footer-content h3, 
 .footer-section h3 {
     color: #ffffff;
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 1.3rem; /* Reduced from 1.8rem */
+    margin-bottom: 8px; /* Tighter spacing */
 }
 
+/* Smaller Body Text */
 .footer-content p {
     color: #a0a0a0;
-    font-size: 0.95rem;
-    margin-bottom: 30px;
+    font-size: 0.85rem; /* Reduced from 0.95rem */
+    margin-bottom: 15px; /* Reduced from 30px */
+    line-height: 1.5;
 }
 
+/* Compact Contact Info */
 .footer-contact p {
     display: flex;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 10px;
+    margin-bottom: 8px; /* Tighter spacing */
     color: #a0a0a0;
-    font-size: 0.95rem;
+    font-size: 0.85rem; /* Reduced size */
     transition: color 0.3s ease;
 }
 
@@ -169,19 +176,20 @@ body {
 
 .footer-contact i {
     color: #ff4500;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Smaller icons */
 }
 
+/* Compact Copyright Bar */
 .footer-bottom {
-    margin-top: 50px;
-    padding-top: 10px;
+    margin-top: 25px; /* Reduced from 50px */
+    padding-top: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
     width: 100%;
 }
 
 .footer-bottom p {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     opacity: 0.6;
     margin: 0;
 }

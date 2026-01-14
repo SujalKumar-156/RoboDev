@@ -73,18 +73,19 @@
         display: none !important;
     }
 
-    /* --- Footer Mobile Adjustments --- */
+   /* --- Footer Mobile Adjustments --- */
     .site-footer {
-        padding-top: 40px;
-        padding-bottom: 20px;
+        padding-top: 30px; /* Compact padding */
+        padding-bottom: 15px;
     }
 
     .footer-container {
         flex-direction: column;
         text-align: center;
-        gap: 30px;
+        gap: 25px;
     }
     
+    /* Ensure icons align with text in center mode */
     .footer-contact p {
         justify-content: center; 
     }
@@ -92,11 +93,32 @@
     /* Force social icons to center */
     .social-icons {
         justify-content: center !important;
+        margin-bottom: 20px;
+    }
+    
+    /* Keep mobile buttons small and consistent */
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
     }
 
     /* --- Hide Page Navigation on Mobile --- */
     .page-navigation {
         display: none;
+    }
+    .faculty-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+        gap: 20px;
+    }
+    
+    .faculty-card blockquote {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 15px;
+        border-top: 2px solid rgba(255, 255, 255, 0.2);
     }
 }   
 
