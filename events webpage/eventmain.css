@@ -1,0 +1,58 @@
+/* ===== Global Styles ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    background: url("/contact webpage/images/contactbg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+/* Headings */
+h1 {
+    color: #0dbbe7e0;
+    font-size: 70px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(36, 174, 234, 0.942);
+}
+
+h2 {
+    color: darkorange;
+    margin-top: 30px;
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    color: #acd50bae;
+    font-size: 30px;
+}
+
+/* Buttons */
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Select */
+select {
+    padding: 5px;
+    margin-bottom: 10px;
+}

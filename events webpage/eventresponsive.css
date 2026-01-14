@@ -1,0 +1,21 @@
+/* ===== Responsive Design ===== */
+
+@media (max-width: 768px) {
+    .project-grid {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-info,
+    .card-img {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+}

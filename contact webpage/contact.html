@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Robotics Club</title>
+    <link rel="stylesheet" href="contactmain.css">
+<link rel="stylesheet" href="contactcomponent.css">
+<link rel="stylesheet" href="contactresponsive.css">
+
+</head>
+<body>
+    
+    <div class="container">
+
+    <h1 class="heading">Robotics Club</h1>
+    <p class="subtitle">Contact Information & Resources</p>
+
+    <!-- Location Map -->
+    <section>
+        <h2>Location</h2>
+         <div class="location-item">
+        <img src="images/location.png" class="map-img" alt="Club Location Map">
+
+         <div class="address-box">
+            <div class="address-item">
+                <img src="images/locationlogo.png" class="location-logo" alt="Location icon">  
+
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <div class="address-text">
+                    <p>Building Name: Incubation Center, NIT Patna</p>
+                    <p>Road: Staff Quarter Road</p>
+                    <p>Floor: 3<sup>rd</sup></p>
+                    <p>Room No.: 121</p>
+                    <p>Patna - 800005, Bihar</p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- Contact Details -->
+    <section>
+        <h2>Contact Details</h2>
+        <div class="contact-item">
+        <img src="images/email.png" alt="Email">
+        <span class="email">: roboticsclub@nitp.ac.in</span>
+    </div>
+
+     <div class="contact-item">
+         <img src="images/phone.png" alt="Phone">
+        <span class="contact">: 
+        <a> Shrinivas
+            7418985961
+        </a>
+        <br/>
+        <a>: Milon
+            8296100660
+        </a>
+
+        </div>
+        
+    </span>
+    </section>
+    <section>
+         <h2>Meeting timings and Schedule</h2>
+    <p class="time"> Meetings: Every Sunday, 10:00 AM - 12:00 PM</p>
+     <p class="time">Extra Sessions: Wednesday, 5:30 - 6:30 PM</p>
+
+    </section>
+     
+    
+
+    <!-- Contact Form -->
+    <section>
+        <h2>Contact Form </h2>
+        <a class="small-text">(Fill this form to contact club members)</a>
+
+        <form id="contactForm">
+            <label class="lbl">Name</label>
+            <input type="text" required>
+
+            <label class="lbl">Email</label>
+            <input type="email" required>
+
+            <label class="lbl">Subject</label>
+            <input type="text" required>
+            <label class="lbl">Purpose</label>
+            <select required>
+                <option>Select purpose</option>
+                <option>General Inquiry</option>
+                <option>Join Club</option>
+                <option>Event Question</option>
+                <option>Collaboration</option>
+            </select>
+
+            <label class="lbl">Message</label>
+            <textarea required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="successMessage" class="success"> </p>
+    </section>
+    <!-- Social Media Links -->
+    <section>
+        <h2>Social Media Accounts of Club</h2>
+        <div class="social-links">
+           <div class="social-item">
+            <img src="images/instagram.png" alt="Instagram">
+             <a href="https://www.instagram.com/robotics_club_nitp/#:~:text=Robotics%20Club%20NITP%20(%40robotics_club_nitp)%20%C2%B7%20Patna" target="_blank" >
+             <span>: robotics_club_nitp</span>
+             </a>
+        </div>
+
+            <div class="social-item">
+            <img src="images/linkedinimg.png" alt="LinkedIn">
+            <a href="https://www.linkedin.com/company/robotics-club-nit-patna/?originalSubdomain=in" target="_blank">
+            <span>: @NITP_Robotics_Club</span>
+    
+            </a>
+        </div>
+            
+             <div class="social-item">
+            <img src="images/facebook.png" alt="Facebook">
+             <a href="https://www.facebook.com/robonitp/" target="_blank">
+            <span>: Robotics Club, NIT Patna</span>
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <h2>FAQs(Frequently Asked Questions)</h2>
+          <div class="FAQ-text">
+        <p><strong>Q: How can I join the Robotics Club?</strong><br>
+           A: Fill the contact form and choose “Join Club”.</p>
+<p><strong>Q: Do I need prior experience?</strong><br>
+           A: No, beginners are welcome.</p>
+
+        <p><strong>Q: Are meetings mandatory?</strong><br>
+           A: Regular attendance is encouraged.</p>
+           </div>
+    </section>
+
+</div>
+
+
+ <script src="contact.js"></script>
+submit fake submission message
+<script>
+  const form = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // stop real submission
+
+    
+  });
+</script>
+
+</body>
+</html>

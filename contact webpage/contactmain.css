@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: url("images/contactbg.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #acd50bae;
+    font-size: 35px;
+}
+
+/* GLOBAL HEADINGS */
+h1, h2, h3 {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1.5px;
+    color: #00aeff;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 15px rgba(0,174,255,0.6);
+}
+
+/* BASIC h2 (from top part) */
+h2 {
+    text-align: center;
+    font-size: 25px;
+    color: #2563eb;
+}
+
+/* GLOBAL SECTION */
+section {
+    margin-top: 30px;
+}
+
+section:hover {
+    box-shadow: 0 0 35px rgba(249,115,22,0.25);
+    transition: 0.3s ease;
+}
