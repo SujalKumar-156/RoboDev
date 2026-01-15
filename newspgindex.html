@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Robotics Club NIT Patna | News</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="components.css">
+    <link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css" integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+ <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="newspgindex.html" class="active">News</a></li>
+            <li><a href="indexx.html">Achievements</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <h1>🤖 Robotics Club NIT Patna</h1>
+    </nav>
+    <div class="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <!-- Filter Buttons -->
+    <section class="filters">
+        <button onclick="filterNews('all')">All</button>
+        <button onclick="filterNews('club')">Club News</button>
+        <button onclick="filterNews('competition')">Competition News</button>
+        <button onclick="filterNews('tech')">Tech Innovations</button>
+        <button onclick="filterNews('research')">Research Breakthroughs</button>
+    </section>
+
+    <!-- News Section -->
+    <section class="news-container">
+
+        
+
+        <!-- Competition -->
+        <div class="news-card competition">
+            <h2>Robot olympics in China</h2>
+            <p class="meta">📅August 17  2025 | Source: Competition Committee</p>
+            <div class="image1">
+                <img src="imagesnewspg/imgrobo4.png" >
+            </div>
+            <p>
+               Robots race, play football, crash and collapse at China's 'robot Olympics'
+            </p>
+            <a href="https://indianexpress.com/article/technology/tech-news-technology/robots-race-play-football-crash-and-collapse-at-chinas-robot-olympics-10194020/" class="read-more">Read More</a>
+        </div>
+
+        <div class="news-card society">
+            <h2>messages to the brain </h2>
+            <p class="meta">📅 December 8 2025 | Source: Robotics Club NIT Patna</p>
+           <div class="image1">
+             <img id="img5" src="imagesnewspg/roboimg5.jpg">
+           </div>
+            <p>
+                A soft wireless brain implant teaches the brain to read light as new, artificial sensations.
+            </p>
+            <a href="https://www.sciencedaily.com/releases/2025/12/251208052515.htm" class="read-more">Read More</a>
+        </div>
+
+        <div class="news-card society">
+            <h2>Robotics society </h2>
+            <p class="meta">📅 10 Sept 2025 | Source: Robotics Club NIT Patna</p>
+            <div class="image1">
+                <img id="img1" src="imagesnewspg/roboclubimg1.jpg">
+            </div>
+            <p>
+                The Robotics Club conducted its weekly meeting focusing on Arduino-based
+                line follower robots. Members discussed sensor calibration, PID control,
+                and upcoming internal hackathons.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <!-- Club News -->
+        <div class="news-card club">
+            <h2>Alpha mini 25 launch</h2>
+            <p class="meta">📅 December 17 2025  | Source: Milagrow</p>
+            <div class="image1">
+                <img src="imagesnewspg/humanoidrobo.jpg">
+            </div>
+            <p>
+               Designed for children and families, the Alpha Mini 25 focuses on interactive learning and emotional engagement. Compact and lightweight, the robot blends expressive movement with conversational artificial intelligence to create a friendly companion for both homes and classrooms. With human-like gestures, facial expressions, and responsive sensors, Alpha Mini 25 encourages children to learn through play, storytelling, and dialogue.
+            </p>
+            <a href="https://indianexpress.com/article/technology/tech-news-technology/milagrow-launches-alpha-mini-25-yanshee-and-robo-nano-2-0-humanoid-robots-prices-start-at-rs-4-89-lakh-10423131/" class="read-more">Read More</a>
+        </div>
+
+        <!-- Tech Innovation -->
+        <div class="news-card tech">
+            <h2>AI-Powered Robots Improve Warehouse Automation
+            </h2>
+            <p class="meta">📅 5 Sept 2025 | Source: IEEE Spectrum</p>
+            <div class="image1">
+                <img src="imagesnewspg/roboimg3.jpg" >
+            </div>
+            <p>
+                Recent advancements in artificial intelligence have significantly enhanced
+                warehouse robotics. AI-powered robots can now identify objects, optimize
+                paths, and collaborate with human workers. These robots reduce operational
+                costs and improve efficiency. Companies like Amazon and Boston Dynamics
+                are investing heavily in autonomous logistics systems.
+            </p>
+            <a href="https://spectrum.ieee.org" target="_blank" class="read-more">Read More</a>
+        </div>
+
+        <!-- Research -->
+        <div class="news-card research">
+            <h2>Soft Robotics Breakthrough in Medical Surgery</h2>
+            <p class="meta">📅 2 Sept 2025 | Source: Nature Robotics</p>
+            <div class="image1">
+                <img src="imagesnewspg/imgrobo4.png" >
+            </div>
+            <p>
+                Researchers have developed soft robotic arms capable of performing
+                delicate surgical procedures. These robots mimic biological muscles,
+                allowing flexible and precise movement. The technology has potential
+                applications in minimally invasive surgeries and rehabilitation robotics.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+        <div class="news-card boxit">
+            <h2> EV Charging Infrastructure </h2>
+            <p class="meta">📅  December 30 2025 | Source: Robotics Club NIT Patna</p>
+            <div class="image1">
+                <img  src="imagesnewspg/robo6img.jpg">
+            </div>
+            <p>
+                V-GREEN and Hindustan Petroleum Corporation Limited (HPCL) announced collaboration partnership towards jointly setting up EVCS at HPCL fuel stations in different markets. V-GREEN will leverage HPCL’s fuel station network to develop...
+            </p>
+            <a href="https://electronicsera.in/v-green-signed-strategic-agreement-with-hpcl-to-develop-ev-charging-infrastructure-at-hpcl-retail-outlets/" class="read-more">Read More</a>
+        </div>
+
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2 id="subsnewsheading">📩 Subscribe to Our Newsletter</h2>
+        <p id="subsnewspara">Stay updated with latest robotics news and club activities.</p>
+         <div class="firework" id="firework1">
+        </div>
+        <div class="imglook">
+        <div class="logo1">
+        <!-- <img id ="imglogo1" src="imagesrobologo.png"> --> </div>
+        <div class="firework">
+        </div>
+        <div class="nitlogo">
+          
+        </div>
+        <div class="subsdiv ">
+            <p class="subsdiv2">Subscribe to our social media page on instagram</p><br><p class="subsdiv2">Subscribe to our social media page on facebook</p><br><p class="subsdiv2">Subscribe to our social media page on linkedin</p><br><p class="subsdiv2">connect with us on mail</p>
+        </div>
+        <div class="subscribe">
+            <div class="insta social_icon"> 
+                <a href="https://www.instagram.com/robotics_club_nitp/#:~:text=Robotics%20Club%20NITP%20(%40robotics_club_nitp)%20%C2%B7%20Patna" target="_blank" >
+               <i id="i1" class="hgi hgi-stroke hgi-instagram"></i>
+            </a></div>
+            <div class="fb social_icon"><a href="https://www.facebook.com/robonitp/" target="_blank">
+                <i  id="i1" class="hgi hgi-stroke hgi-facebook-02"></i>
+            </a></div>
+            <div class="li social_icon"><a href="https://www.linkedin.com/company/robotics-club-nit-patna/?originalSubdomain=in" target="_blank">
+              <i id="i1" class="hgi hgi-stroke hgi-linkedin-01"></i>
+            </a></div>
+            <div class="mail social_icon"><a href="office.tnp@nitp.ac.in "  target="_blank">
+                <i id="i1" class="hgi hgi-stroke hgi-mail-01"></i>
+            </a></div>
+        </div>
+        </div>
+</div>
+    </section>
+<!-- 
+    Footer --> 
+    <footer>
+        <p>© 2025 Robotics Club, NIT Patna</p>
+    </footer>
+    <!-- <footer class="site-footer">
+        <div class="footer-container">
+            
+            <div class="footer-section social">
+                <h3>Connect With Us</h3>
+                <p>Follow the Robotics Club NIT Patna on social media for the latest updates.</p>
+                <div class="social-icons" style="justify-content: flex-start;"> <a href="https://www.facebook.com/robonitp/" target="_blank" class="social-btn facebook-btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/robotics_club_nitp/" target="_blank" class="social-btn instagram-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/robotics-club-nit-patna" target="_blank" class="social-btn linkedin-btn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section contact">
+                <h3>Quick Contact</h3>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-envelope"></i> roboticsclub@nitp.ac.in</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Ashok Rajpath, National Institute of Technology Patna <br> Incubation Center 3rd Floor - 800005</p>
+                    <p><i class="fa-solid fa-clock"></i> Mon - Fri: 5:30 PM - 8:30 PM</p>
+                </div>
+            </div> -->
+
+        <!-- </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Robotics Club NIT Patna. All rights reserved.</p>
+        </div>
+    </footer> -->
+
+
+    <script src="index-and-about-page/js/main-home&about.js"></script>
+</body>
+    <script src="firstfile.js"></script>
+</html>
