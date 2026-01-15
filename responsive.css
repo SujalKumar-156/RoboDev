@@ -23,6 +23,41 @@
   .timeline-item {
     padding: 15px 20px;
   }
+  /* --- Footer Mobile Adjustments --- */
+    .site-footer {
+        padding-top: 30px; /* Compact padding */
+        padding-bottom: 15px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    /* Ensure icons align with text in center mode */
+    .footer-contact p {
+        justify-content: center; 
+    }
+
+    /* Force social icons to center */
+    .social-icons {
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+    
+    /* Keep mobile buttons small and consistent */
+    .social-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    /* --- Hide Page Navigation on Mobile --- */
+    .page-navigation {
+        display: none;
+    }
+
 }
 
 
