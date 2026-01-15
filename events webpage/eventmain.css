@@ -86,7 +86,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: large;
     text-align: center;
-    background: url("/contact webpage/images/contactbg.png");
+    background: url("images/contactbg.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
