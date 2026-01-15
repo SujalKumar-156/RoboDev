@@ -252,6 +252,12 @@ footer {
     height: 40vh;
 
 }
+.image1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 .image1{
     /* display: flex;*/
     
