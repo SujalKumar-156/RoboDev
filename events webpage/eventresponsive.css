@@ -6,6 +6,17 @@
         height: auto;
     }
 
+    .fixed-logo {
+        left: 20px;
+        top: 25px; /* Aligns better with the hamburger menu */
+    }
+
+    .fixed-logo img {
+        width: 25vw; 
+        min-width: 90px;
+        max-width: 120px;
+    }
+
     .card-info,
     .card-img {
         width: 100%;

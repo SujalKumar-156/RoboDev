@@ -19,6 +19,29 @@ header {
     display: inline-block;
 }
 
+/* ================== FIXED LOGO ================== */
+.fixed-logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 1005;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.fixed-logo img {
+    width: 150px; 
+    padding-left: 20px;
+}
+
+.fixed-logo:hover img {
+    filter: drop-shadow(0 0 5px #ff4500) drop-shadow(0 0 15px #ff4500);
+}
+
+.fixed-logo:hover {
+    transform: scale(1.5);
+}
+
 /* nav-bar khushi */
 /* nav {
     position: fixed;
