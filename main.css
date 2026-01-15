@@ -324,11 +324,11 @@ position: relative;
 }
 
 .footer-contact p:hover {
-    color: #ff4500;
+    color: #3e0c8a;
 }
 
 .footer-contact i {
-    color: #ff4500;
+    color: #e50808;
     font-size: 1rem; /* Smaller icons */
 }
 
@@ -345,4 +345,8 @@ position: relative;
     font-size: 0.75rem;
     opacity: 0.6;
     margin: 0;
+    color: #ff4500;
+}
+#footerpara{
+  color: #007fff;
 }

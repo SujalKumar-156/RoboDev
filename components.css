@@ -297,8 +297,14 @@ height: 20rem;
   background:linear-gradient(rgba(118, 170, 209, 0.74),rgba(47, 70, 128, 0.855));
 
 }
-#heading1, #heading2 {
+#heading1 {
   color: #f9fbfd;
+}
+#heading2{
+ background-image: url(imagess/tow-design-hero.jpg);
+  background-clip: text;
+  color: transparent;
+    
 }
 #para,#para4,#para1,#para2 {
   color: #f9fbfd;
