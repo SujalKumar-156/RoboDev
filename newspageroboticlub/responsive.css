@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         text-align: center;
@@ -24,8 +24,87 @@
   }
 }
 /* Mobile */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
   .news-container{
     grid-template-columns: 1fr;
   }
+} */
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 30px;
+}
+@media (max-width: 900px) {
+
+    nav {
+        top: 20px;
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    nav > ul {
+        display: none;
+        flex-direction: column;
+        height: auto;
+        padding: 15px 0;
+        gap: 12px;
+    }
+
+    nav.active > ul {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+@media (max-width: 600px) {
+    .filters {
+        margin-top: 140px;
+    }
+
+    .filters button {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+@media (max-width: 900px) {
+    .imglook {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .nitlogo {
+        margin-top: 2rem;
+        right: 0;
+    }
+
+    .subscribe {
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+        padding: 10px;
+    }
+}
+.image1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+@media (max-width: 600px) {
+    h1 { font-size: 1.2rem; }
+    h2 { font-size: 1.1rem; }
+    p  { font-size: 0.95rem; }
+}
+body {
+    padding-top: 50px;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding-top: 160px;
+    }
 }
