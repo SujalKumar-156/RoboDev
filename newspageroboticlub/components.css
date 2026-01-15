@@ -130,6 +130,7 @@ nav > ul li a.active {
 .filters {
     text-align: center;
     margin: 20px;
+    margin-top: 120px;
 }
 
 .filters button {
@@ -141,6 +142,7 @@ nav > ul li a.active {
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 20px;
 }
 h1{
     background-image: url(imagesnewspg/heading1.jpg);
@@ -160,14 +162,11 @@ h2{
 
 .news-container {
     display: grid;
-    /* flex-wrap: wrap; */
-    /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    /* grid-template-columns: repeat(3, 1fr); */
      grid-template-columns:  470px 470px 470px ; 
     gap: 2rem;
     padding: 30px;
     box-sizing: border-box;
-    padding-top: 5px;
+    padding-top: 2px;
 }
 
 .news-card {
