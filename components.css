@@ -18,6 +18,7 @@ nav {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: hidden;
+    
 }
 
 nav:before {
@@ -247,8 +248,7 @@ height: 20rem;
 .sec2{
   /* background-image: url(bckgrndcloudyblue.jpg); */
   background:linear-gradient(rgba(118, 170, 209, 0.74),rgba(47, 70, 128, 0.855));
- 
-  
+
 }
 #heading1, #heading2 {
   color: #f9fbfd;
@@ -257,13 +257,15 @@ height: 20rem;
   color: #f9fbfd;
 }
 .boxxx1:hover {
-  animation: flipp 1.5s;
+  /* animation: flipp 1.5s; */
+  animation: enlarge 1s;
 }
 .boxxx2:hover{
-  animation: rotate 1.5s;
+  /* animation: rotate 1.5s; */
+animation: enlarge 1s;
 }
 .boxxx3:hover{
-  animation: rotate2 1.5s;
+  animation: enlarge 1s;
 }
 .boxxx4:hover{
   animation: enlarge 1s;
@@ -274,22 +276,22 @@ height: 20rem;
  font-weight: 500;
 }
 
-@keyframes flipp{
+/* @keyframes flipp{
   0%{transform: rotate(90deg);}
   100%{transform: scaleX(-1);}
 }
 @keyframes rotate{
   0%{transform: rotateY(0);}
   100%{transform: rotateY(90deg);}
-}
+} */
 @keyframes enlarge{
   0%{transform: scale(0.5);}
   100%{transform: scale(1.5);}
 }
-@keyframes rotate2{
+/* @keyframes rotate2{
   0%{transform: rotateX(0);}
   100%{transform: rotateX(90deg);}
-}
+} */
 .boxx{
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(11, 7, 229, 0.61);
@@ -303,4 +305,15 @@ height: 20rem;
   transform: translateY(-8px);
   border: 10px;
   box-shadow: 0 6px 18px  rgb(25, 92, 237);
+}
+#heading2{
+  top: 0;
+  /* margin-bottom: 3%; */
+  padding-bottom:3% ;
+}
+.key{
+  color: #41abb9;
+}
+#keyy1{
+  color: #41abb9;
 }
