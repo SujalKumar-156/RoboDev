@@ -197,8 +197,16 @@ h2{
     text-align: center;
     background: #020617;
     padding: 10px;
-    padding-top: 10%;
+    padding-top: 2%;
    
+}
+.subsdiv{
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+     gap:7%;
+     color: #e5d4cf;
+     font-size: 18px;
 }
 .imglook{
     display: flex;
@@ -250,9 +258,9 @@ width: 80vb;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    /* gap: 3vh; */
-    /* padding-top: 12%; */
+    
     border-radius: 15%;
+
 }
 
 .social_icon {
@@ -426,4 +434,12 @@ transform: translateY(-8px);
     border-color: #0A66C2;
     box-shadow: 0 0 20px rgba(10, 102, 194, 0.6), 0 0 40px rgba(10, 102, 194, 0.3);
     transform: translateY(-6px) scale(1.1);
+}
+#subsnewsheading{
+ color: #0a66c2;
+ text-shadow: #c1c6dd;
+ font-size:30px ;
+}
+#subsnewspara{
+    font-size: 20px;
 }
