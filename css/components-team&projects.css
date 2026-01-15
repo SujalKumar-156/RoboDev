@@ -56,25 +56,26 @@
     height: 100%; width: 100%; object-fit: contain;
 }
 .projects-img img{
-    width: 370px; height: 300px; object-fit: cover;border: 3px solid rgb(138, 6, 6);border-radius: 10px; overflow: hidden;
+    width: 370px; height: 300px; object-fit: cover;border: 3px solid #ff4500;border-radius: 10px; overflow: hidden;
 }
 .mybox1{  display:none; }
-.btn{ color:red;border:2px solid red;border-radius:5px;padding:5px;background-color:transparent;cursor:pointer;margin-top:20px;}
-.btn:hover{background-color: rgb(149, 31, 31);color: #fff;border:1px solid #fff;}
+.btn{ color:#ff4500;border:2px solid #ff4500;border-radius:5px;padding:5px;background-color:transparent;cursor:pointer;margin-top:20px;}
+.btn:hover{background-color: #ff4500;color: #fff;border:1px solid #fff;}
 .projects-img:hover{ transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
    
 
 #header h4{
-    color: rgb(167, 18, 18);line-height: 1;}
+    color: #ff4500;line-height: 1;}
 
  /*---team page specific styles*/
 .members{color: #fff; height: 300px; width: 250px;  margin: 70px; text-align: center; align-items: center; justify-content: center; }
-.members img{ height: 150px; width: 150px;border: 2px solid #8e1a1a; border-radius: 50%; margin-top: 10px;}
-.members:hover{border: 2px solid #8e1a1a; border-radius: 20px;transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+.members img:hover{transform:scale(1.1); z-index:99 ; box-shadow:0 10px 20px #b7b3b3}
+.members img{ height: 150px; width: 150px;border: 2px solid #ff4500; border-radius: 50%; margin-top: 10px;position:relative; transition:transform 0.3s ease;z-index:0.3s ease;}
+.members:hover{border: 2px solid #ff4500; border-radius: 20px;transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
  .linkedin{ height: 50px; width: 50px; margin: auto;  justify-content: center; align-items: center; display: flex; margin-top: 10px; cursor: pointer; transition: transform 0.3s;}
  .linkedin:hover{ transform: scale(1.1);}
 #team-faculty{ display: flex; justify-content: center; align-items: center; flex-wrap: wrap;margin-bottom: 50px;}
-.team-img{ height: 200px; width: 200px; border: 3px solid #8e1a1a; border-radius: 50%;object-fit: cover; }
+.team-img{ height: 200px; width: 200px; border: 3px solid #ff4500; border-radius: 50%;object-fit: cover; }
 #words{ margin-top:20px; color: #fff; font-size: 1.2rem; line-height: 1.6rem; width: 600px;}
  #words h3{opacity:0.6}
     
@@ -82,3 +83,5 @@
 #PI p{font-size:1rem;}
 #faculty{  margin-bottom:50px;color:#fff; text-align: center; margin-left: 30px; }
 .prof:hover{transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5);}
+.prof img{position:relative; transition:transform 0.3s ease;z-index:0.3s ease;}
+.prof img:hover{transform:scale(1.1); z-index:99 ; box-shadow:0 10px 20px #b7b3b3}

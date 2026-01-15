@@ -36,9 +36,9 @@ let mem = document.getElementsByClassName("members");
 let logo = document.getElementsByClassName("linkedin");
 for (let i = 0; i < logo.length; i++) {
   mem[i].addEventListener("mouseenter", () => {
-    let s = `<a href="#"><i class="fab fa-linkedin"></i></a>`;
+    let s = `<a href="https://www.linkedin.com/company/robotics-club-nit-patna"><i class="fab fa-linkedin"></i></a>`;
     logo[i].innerHTML = s;
-    logo[i].style.backgroundColor = "#981b1bff";
+    logo[i].style.backgroundColor = "#1877F2";
     logo[i].style.border = "1px solid #050404ff";
     logo[i].style.borderRadius = "50%";
   });
