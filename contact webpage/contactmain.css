@@ -19,8 +19,31 @@ header {
     display: inline-block;
 }
 
-/* nav-bar */
-nav {
+/* ================== FIXED LOGO ================== */
+.fixed-logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 1005;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.fixed-logo img {
+    width: 150px; 
+    padding-left: 20px;
+}
+
+.fixed-logo:hover img {
+    filter: drop-shadow(0 0 5px #ff4500) drop-shadow(0 0 15px #ff4500);
+}
+
+.fixed-logo:hover {
+    transform: scale(1.5);
+}
+
+/* nav-bar khushi */
+/* nav {
     position: fixed;
     top: 30px;
     left: 50%;
@@ -51,9 +74,9 @@ nav > ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    height: 55px;
-    gap:25px;
-    isolation: isolate;
+    height: 55px; */
+    /* gap:25px; */
+    /* isolation: isolate;
     padding: 0;
     margin: 0;
 }
@@ -61,7 +84,7 @@ nav > ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 0.9rem;
 }
 nav > ul::after {
     content: '';
@@ -77,7 +100,7 @@ nav > ul::after {
     opacity: 0;
     z-index: -1;
     box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
-} 
+}  */
  
  
  

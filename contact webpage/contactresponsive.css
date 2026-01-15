@@ -10,6 +10,16 @@
     font-size: 36px;
     letter-spacing: 1px;
   }
+  .fixed-logo {
+        left: 20px;
+        top: 25px; /* Aligns better with the hamburger menu */
+    }
+
+    .fixed-logo img {
+        width: 25vw; 
+        min-width: 90px;
+        max-width: 120px;
+    }
 
   .subtitle{
     font-size: 16px;

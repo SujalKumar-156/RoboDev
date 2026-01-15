@@ -21,8 +21,8 @@ header {
     display: inline-block;
 }
 
-/* nav-bar */
-nav {
+/* nav-bar khushi*/
+/* nav {
     position: fixed;
     top: 30px;
     left: 50%;
@@ -79,14 +79,14 @@ nav > ul::after {
     opacity: 0;
     z-index: -1;
     box-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
-}
+} */
 
 
 body {
     font-family: Arial, sans-serif;
     font-size: large;
     text-align: center;
-    background: url("/contact webpage/images/contactbg.png");
+    background: url("eventimages/contactbg.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

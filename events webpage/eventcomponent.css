@@ -14,6 +14,15 @@ nav {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: hidden;
+     /* Dark semi-transparent background */
+    background: rgba(3, 24, 45, 0.7); 
+    
+    /* Subtle blue border to match your header */
+    border: 1px solid rgba(0, 174, 255, 0.3); 
+    
+    /* Stronger blur for readability */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
 }
 
 nav:before {
@@ -105,6 +114,29 @@ nav > ul li a.active {
     transform: rotate(90deg);
     background-color: rgba(255, 69, 0, 0.2); 
     box-shadow: 0 0 15px rgba(255, 69, 0, 0.4);
+}
+
+/* ================== FIXED LOGO ================== */
+.fixed-logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 1005;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.fixed-logo img {
+    width: 150px; 
+    padding-left: 20px;
+}
+
+.fixed-logo:hover img {
+    filter: drop-shadow(0 0 5px #ff4500) drop-shadow(0 0 15px #ff4500);
+}
+
+.fixed-logo:hover {
+    transform: scale(1.5);
 }
 
 /* ===== Events Section ===== */
