@@ -121,6 +121,7 @@ nav > ul li a.active {
     color: rgb(241, 176, 55);
     text-align: center;
     font-size: 30px;
+    padding-left: 30px;
 }
 
 .address-item {
@@ -134,6 +135,16 @@ nav > ul li a.active {
     margin-top: 15px;
     margin-bottom: 40px;
 }
+/* Hover Effect */
+.map-img:hover {
+    box-shadow: 0 0 25px orange;
+    transform: scale(1.03);
+}
+
+.map-img:hover  {
+    transform: scale(1.1);
+}
+
 
 .location-logo {
     width: 28px;
