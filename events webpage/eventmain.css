@@ -65,7 +65,7 @@ nav > ul li {
     align-items: center;
     font-size: 40px;
 }
-av > ul::after {
+nav > ul::after {
     content: '';
     position: absolute;
     left: 0;

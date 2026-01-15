@@ -1,6 +1,91 @@
+/* ===== MOBILE PHONES ===== */
+@media (max-width: 768px) {
+
+  .container{
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .heading{
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+
+  .subtitle{
+    font-size: 16px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .FAQ-text{
+    font-size: 16px;
+  }
+
+  /* Social media section */
+  .social-links{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .social-item span{
+    font-size: 16px;
+  }
+
+  .social-item img{
+    width: 22px;
+    height: 22px;
+  }
+
+  /* Contact section */
+  .contact-item{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-item span{
+    font-size: 16px;
+  }
+
+  /* Prevent overflow */
+  body{
+    overflow-x: hidden;
+  }
+}
+
+
+/* ===== TABLETS ===== */
+@media (max-width: 1024px) {
+  .heading{
+    font-size: 60px;
+  }
+
+  .subtitle{
+    font-size: 22px;
+  }
+
+  .social-links{
+    gap: 30px;
+  }
+
+  .social-item span{
+    font-size: 20px;
+  }
+
+  .contact-item span{
+    font-size: 20px;
+  }
+
+  .FAQ-text{
+    font-size: 20px;
+  }
+}
 @media (min-width: 900px) {
     .container {
-        max-width: 2200px;
+        max-width: 1200px;
         margin: auto;
     }
 }
+
+

@@ -78,7 +78,7 @@ textarea {
 /* Button */
 button {
     margin-top: 20px;
-    margin-left: 600px;
+    margin-left: 450px;
     padding: 12px;
     width: 20%;
     background-color: #2563eb;
@@ -126,7 +126,7 @@ button:hover {
 
 .social-item span {
     font-size: 28px;
-    color: blue;
+    color: rgba(16, 156, 243, 0.878);
 }
 
 /* Contact */
