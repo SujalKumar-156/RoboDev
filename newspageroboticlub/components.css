@@ -217,6 +217,9 @@ h2{
      color: #e5d4cf;
      font-size: 18px;
 }
+.subsdiv2:hover{
+    color: rgb(220, 17, 17);
+}
 .imglook{
     display: flex;
     justify-content: space-between;
