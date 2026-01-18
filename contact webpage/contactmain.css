@@ -109,7 +109,9 @@ nav > ul::after {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: url("images/contactbg.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/background/dddf74291e195ff6b4a9a29b0184cbf910c7d8de-2048x1121.jpg');
+    background-size: cover;
     background-size: cover;
     background-position: center;
 }
@@ -139,7 +141,7 @@ nav > ul::after {
 
 .subtitle {
     text-align: center;
-    color: #acd50bae;
+    color: white;
     font-size: 35px;
     text-decoration: underline;
 }
@@ -148,20 +150,20 @@ nav > ul::after {
 h1, h2, h3 {
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1.5px;
-    color: #00aeff;
+    color: #ff4500;
 }
 
 h1 {
     font-size: 3rem;
     text-align: center;
-    text-shadow: 0 0 15px rgba(0,174,255,0.6);
+    text-shadow: 0 0 15px #e86a3d;
 }
 
 /* BASIC h2 (from top part) */
 h2 {
     text-align: center;
     font-size: 25px;
-    color: #2563eb;
+    color: #ff4500;
     display: inline-block;      /* VERY IMPORTANT */
     transition: transform 0.4s ease;
     cursor: pointer;
