@@ -7,19 +7,21 @@
 }
 
 body {
-  background-image: url(imagess/tow-design-hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../images/background/dddf74291e195ff6b4a9a29b0184cbf910c7d8de-2048x1121.jpg');
+    background-size: cover;
   /* background: linear-gradient(to bottom,
     #667eea, #0f2027, #091333, #054ddfbc); */
-  color: #370606;
-  line-height: 1.6;
+ 
 
 }
 
 /* ===== Header ===== */
 header {
-  background: #03182d;
+  
   color: #fff;
   text-align: center;
+  margin-top: 15vh;
   
 }
 

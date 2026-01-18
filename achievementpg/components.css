@@ -1,6 +1,27 @@
 #logo1{
   border-radius: 50%;
 }
+.fixed-logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    z-index: 1005;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.fixed-logo img {
+    width: 150px; 
+    padding-left: 20px;
+}
+
+.fixed-logo:hover img {
+    filter: drop-shadow(0 0 5px #ff4500) drop-shadow(0 0 15px #ff4500);
+}
+
+.fixed-logo:hover {
+    transform: scale(1.5);
+}
 
 /* ================== NAVIGATION BAR ================== */
 nav {
@@ -11,18 +32,18 @@ nav {
     width: fit-content;
     padding: 0 30px;
     border-radius: 16px;
-    background: rgba(255, 255, 255, 0.1); 
+   
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 4px 16px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     overflow: hidden;
      /* Dark semi-transparent background */
-    background: rgba(3, 24, 45, 0.7); 
+    
     
     /* Subtle blue border to match your header */
-    border: 1px solid rgba(0, 174, 255, 0.3); 
+    border: 1px solid; 
     
     /* Stronger blur for readability */
     backdrop-filter: blur(15px);
@@ -187,7 +208,7 @@ nav > ul li a.active {
   text-align: center;
   color: antiquewhite;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  background: radial-gradient(rgb(4, 4, 104),rgb(49, 2, 49));
+  background: radial-gradient(#ff4500,rgb(128,4,4));
   /* Fade-in default */
   /* opacity: 0; */
   transform: translateY(30px);
@@ -201,7 +222,7 @@ nav > ul li a.active {
 
 .counter {
   font-size: 2.5rem;
-  color: #41abb9;
+  color: black;
 }
 .box{
   display:grid;
@@ -229,7 +250,7 @@ nav > ul li a.active {
 /* ===== Timeline ===== */
 .timeline {
   /* background-image: url(bckgrndd.jpg); */
-  background: rgba(0,0,0,0.5) url(imagess/bckgrndd.jpg);
+  background-color: black;
   color: wheat;
   border-radius: 1rem;
 }
@@ -267,7 +288,7 @@ border:6px solid rgb(88, 29, 29);
 height: 20rem;
 }
 .container{
-  background-image: url(imagess/bckgrndblue4.png);
+  background-color: #ff4500; 
   padding: 20px;
   margin-bottom: 25px;
   border-radius: 12px;
@@ -277,8 +298,12 @@ height: 20rem;
   background-repeat: no-repeat;
   
 }
+.container:hover{
+  transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(253, 42, 0, 0.612);
+}
 .container2{
-  background-image: url(imagess/bckgrndblue4.png);
+ background-color: #ff4500;
   padding: 20px;
   margin-bottom: 25px;
   border-radius: 12px;
@@ -286,6 +311,15 @@ height: 20rem;
   display: block;
   
  
+}
+.container2:hover{
+  transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(225, 14, 14, 0.612);
+}
+header h4{
+  
+  
+  color:#ff4500;
 }
 
 .imgbox img{
@@ -297,14 +331,15 @@ height: 20rem;
  }
 .sec1{
   /* background-color: bisque; */
-  background-image: url(imagess/bckgrndimgbluedark.jpg);
+ background-color: black;
   object-fit:cover;
   
 }
 .sec2{
   /* background-image: url(bckgrndcloudyblue.jpg); */
-  background:linear-gradient(rgba(118, 170, 209, 0.74),rgba(47, 70, 128, 0.855));
-
+  color: white;
+ background-color: black;
+ object-fit: cover;
 }
 #heading1 {
   color: #f9fbfd;
@@ -318,21 +353,10 @@ height: 20rem;
 #para,#para4,#para1,#para2 {
   color: #f9fbfd;
 }
-.boxxx1:hover {
-  /* animation: flipp 1.5s; */
-  animation: enlarge 1s;
-}
-.boxxx2:hover{
-  /* animation: rotate 1.5s; */
-animation: enlarge 1s;
-}
-.boxxx3:hover{
-  animation: enlarge 1s;
-}
-.boxxx4:hover{
-  animation: enlarge 1s;
-}
 
+.social-icons{
+  margin-top: 15px;
+}
 #headingg { 
  font-size: 2rem;
  font-weight: 500;
@@ -356,7 +380,7 @@ animation: enlarge 1s;
 } */
 .boxx{
   border-radius: 10px;
-  box-shadow: 0 0 25px rgba(11, 7, 229, 0.61);
+  box-shadow: 0 0 25px ;
  margin-right: 3%;
  margin-bottom: 2%
 }
@@ -366,8 +390,10 @@ animation: enlarge 1s;
 .stat:hover {
   transform: translateY(-8px);
   border: 10px;
-  box-shadow: 0 6px 18px  rgb(25, 92, 237);
+  box-shadow: 0 6px 18px #ff4500;
 }
+.nav-btn.prev:hover i { transform: translateX(-4px); }
+.nav-btn.next:hover i { transform: translateX(4px); }
 #heading2{
   top: 0;
   /* margin-bottom: 3%; */
