@@ -116,4 +116,18 @@
     .page-navigation {
         display: none;
     }
+    
+    .fixed-logo { left: 20px; top: 25px; }
+    .fixed-logo img { width: 100px; padding-left: 0; }
+    
+    /* Hides the desktop pill navbar on mobile */
+    nav { display: none; } 
+    
+    .footer-container { flex-direction: column; text-align: center; }
+    .social-icons { justify-content: center; }
+    .footer-contact p { justify-content: center; }
+
+    /* Hide Page Navigation on Mobile to prevent clutter */
+    .page-navigation { display: none; }
+
 }

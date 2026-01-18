@@ -5,13 +5,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollAreas = document.querySelectorAll(".card-scroll-area");
 
   scrollAreas.forEach((area) => {
-    area.addEventListener("scroll", () => {
-      // Find the cue (arrow) inside this specific card
-      const cue = area.querySelector(".scroll-cue");
+    // Note: The cue is now a SIBLING of the scroll area, effectively placed
+    // in the parent .project-card container.
+    // We need to traverse up to the parent (.project-card) then find .scroll-cue
+    const card = area.closest(".project-card");
+    const cue = card.querySelector(".scroll-cue");
 
-      // Logic: scrollTop + clientHeight = scrollHeight (approx)
-      // If user is within 20px of the bottom, hide the arrow
-      if (area.scrollTop + area.clientHeight >= area.scrollHeight - 20) {
+    area.addEventListener("scroll", () => {
+      // Logic: If user has scrolled down more than 5px, HIDE the cue.
+      // If user is at the very top, SHOW the cue.
+      if (area.scrollTop > 5) {
         if (cue) cue.classList.add("hidden");
       } else {
         if (cue) cue.classList.remove("hidden");
