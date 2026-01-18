@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: #0f172a;
+    /* background-color: #0f172a; */
+    background-color: #130802;
     color: #e5e7eb;
     line-height: 1.6;
     
@@ -74,7 +75,7 @@ a {
 }
 
 .footer-contact p:hover {
-    color: #3e0c8a;
+    color: #bb650a;
 }
 
 .footer-contact i {
