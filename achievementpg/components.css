@@ -379,3 +379,62 @@ animation: enlarge 1s;
 #keyy1{
   color: #41abb9;
 }
+
+/* Page Navigation Container */
+/* ================== PAGE NAVIGATION BUTTONS ================== */
+
+.page-navigation {
+    padding: 40px 8%;
+    /* Subtle fade at the top to separate from content */
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 30px;
+    color: #ffffff;
+    
+    /* Glass + Neon Border Style */
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 69, 0, 0.3);
+    
+    border-radius: 50px; /* Pill Shape */
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover State */
+.nav-btn:hover {
+    background: rgba(255, 69, 0, 0.15); /* Orange Tint */
+    border-color: #ff4500; /* Bright Neon Border */
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.4); /* Glow Effect */
+    transform: translateY(-3px);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Icon Animation on Hover */
+.nav-btn i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+    color: #ff4500;
+}
+
+.nav-btn:hover i {
+    color: #fff; /* Icon turns white on hover */
+}
+
+/* Move arrows outward on hover */
+.nav-btn.prev:hover i { transform: translateX(-5px); }
+.nav-btn.next:hover i { transform: translateX(5px); }
