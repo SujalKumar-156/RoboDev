@@ -55,11 +55,11 @@ for (let j = 0; j < logo.length; j++) {
 
 gsap.from("#header h1", { y: -100, opacity: 0, duration: 1 });
 gsap.from("#header h4", { y: 100, opacity: 0, duration: 1, delay: 1 });
-gsap.from("#icon", {
-  scale: 0.5,
-  duration: 1,
-  delay: 0.5,
-  ease: "back.out(1.7)",
-  repeat: -1,
-  yoyo: true,
-});
+// gsap.from("#icon", {
+//   scale: 0.5,
+//   duration: 1,
+//   delay: 0.5,
+//   ease: "back.out(1.7)",
+//   repeat: -1,
+//   yoyo: true,
+// });

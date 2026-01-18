@@ -165,8 +165,10 @@ h2{
 }
 
 .filters button:hover {
-    background: #38bdf8;
-    color: black;
+    /* background: #38bdf8; */
+    background: #bf600e; 
+    color: rgb(252, 246, 246);
+    font-size: 1.5rem;
 }
 
 .news-container {
@@ -179,7 +181,8 @@ h2{
 }
 
 .news-card {
-    background: #020617;
+    /* background: #020617; */
+     background: rgba(255, 255, 255, 0.05);
     padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -188,8 +191,8 @@ h2{
 
 .news-card:hover {
     transform: translateY(-8px);
-    /* box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); */
-     box-shadow: 0 0 20px rgba(36, 249, 72, 0.61);
+    box-shadow: 0 0 20px rgba(225, 14, 14, 0.612);
+     /* box-shadow: 0 0 20px rgba(36, 249, 72, 0.61); */
 }
 
 .meta {
@@ -200,6 +203,10 @@ h2{
 .read-more {
     display: inline-block;
     margin-top: 10px;
+    color: white;
+}
+.read-more:hover{
+    color: red;
 }
 
 .newsletter {
@@ -454,7 +461,7 @@ transform: translateY(-8px);
     transform: translateY(-6px) scale(1.1);
 }
 #subsnewsheading{
- color: #0a66c2;
+ color: #e18905;
  text-shadow: #c1c6dd;
  font-size:30px ;
 }

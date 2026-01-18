@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Projects|Robotics Club</title>
-       
-        <link rel="stylesheet" href="css/main-team&projects.css">
-        <link rel="stylesheet" href="css/components-team&projects.css">
-        <link rel="stylesheet" href="css/responsive-team&projects.css">
-        <link rel="stylesheet" href="index-and-about-page/css/main.css">
-        <link rel="stylesheet" href="index-and-about-page/css/components.css">
-        <link rel="stylesheet" href="index-and-about-page/css/responsive.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Robotics Club</title>
+   
+    <link rel="stylesheet" href="css/main-team&projects.css">
+    <link rel="stylesheet" href="css/components-team&projects.css">
+    <link rel="stylesheet" href="css/responsive-team&projects.css">
 
-         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    </head>
-    <body>
-        <div class="pointer"> <nav>
+    <nav>
         <ul>
             <li><a href="index-and-about-page/index.html">Home</a></li>
             <li><a href="index-and-about-page/about.html">About</a></li>
@@ -28,74 +25,216 @@
             <li><a href="achievementpg/indexx.html">Achievements</a></li>
             <li><a href="contact webpage/contact.html">Contact</a></li>
         </ul>
-    </nav> </div>
-        <div id="main">
+    </nav> 
+
+    <div id="main">
         <div id="header">
-           <div id="icon"><img src="images/roboticsClubLogo.png" alt="logo"></div>
-           <div id="heading"> <h1 >Our Projects</h1>
-            <h4 >what we have built</h4> </div>
+            <a href="index.html" class="fixed-logo">
+                <img src="../images/roboticsClubLogo.png" alt="Robotics Club NITP">
+            </a>
+           <div id="heading"> 
+               <h1>Our Projects</h1>
+               <h4>what we have built</h4> 
+           </div>
         </div>
+
         <div id="projects-container" class="background">
-             <div id="box1" class="box">
-                <div class="projects-img"><img  src="images/projects/project1.png" alt="img">
-                    <div class="mybox"> <h2>SELF BALANCING BOT</h2><p>The self-balancing robot is similar to an upside-down pendulum. Unlike a normal pendulum which keeps on swinging once given a nudge,  </p></div><span id="span1"></span><span class="mybox1" id="mybox1id"> <p>  this inverted pendulum cannot stay balanced on its own. It will simply fall over. Then how do we balance it? Consider balancing a broomstick on our index finger which is a classic example of balancing an inverted pendulum. We move our finger in the direction in which the stick is falling. Similar is the case with a self-balancing robot, only that the robot will fall either forward or backward. Just like how we balance a stick on our finger, we balance the robot by driving its wheels in the direction in which it is falling. What we are trying to do here is to keep the center of gravity of the robot exactly above the pivot point. To drive the motors we need some information on the state of the robot. We need to know the direction in which the robot is falling, how much the robot has tilted and the speed with which it is falling. All these information can be deduced from the readings obtained from MPU6050. We combine all these inputs and generate a signal which drives the motors and keeps the robot balanced.</p></span>
-            <div class="btn" id="mybuttonid1" onclick="changeReadMore()" >Read More</div></div>
-             <div class="projects-img"><img src="images/projects/project2.png" alt="img">
-            <div class="mybox"><h2>MARK 1.6</h2><p>Mark 1.6 is basically a fully wireless Bluetooth controlled robotic arm which is mounted on a 4WD chassis in this the arm is</p></div><span id="span2"></span><span class="mybox1" id="mybox2id"><p>made using 3D printer and used NRF modules</p></span>
-            <div class="btn" id="mybuttonid2" onclick="changeReadMore2()">Read More</div></div>
-             <div class="projects-img"><img src="images/projects/project3.png" alt="img"><div class="mybox"><h2>LINE FOLLOWER BOT</h2><p>The line follower robot is a mobile machine that can detect and follow the line drawn on the floor. Generally, the path is predefined</p></div><span id="span3"></span><span class="mybox1" id="mybox3id"><p>and can be either visible like a black line on a white surface with a high contrasted color or it can be invisible like a magnetic filed. Definitely, this kind of robot should sense the line with its infrared ray (IR) sensors that installed under the robot. After that, the data is transmitted to the processor by specific transition buses. Hence, the processor is going to decide the proper commends and then it sends them to the driver and thus the path will be followed by the line follower robot. In this Paper, we have illustrated the process of design, implementation and testing TABAR, a small line follower robot designed for the line follower robots competition.</p></span><div class="btn" id="mybuttonid3" onclick="changeReadMore3()">Read More</div></div>
+             <div class="project-grid-container">
+                
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project1.png" alt="Self Balancing Bot">
+                        <h2>SELF BALANCING BOT</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>The self-balancing robot is similar to an upside-down pendulum. Unlike a normal pendulum which keeps on swinging once given a nudge, this inverted pendulum cannot stay balanced on its own. It will simply fall over.</p>
+                            <p>Then how do we balance it? Consider balancing a broomstick on our index finger which is a classic example of balancing an inverted pendulum. We move our finger in the direction in which the stick is falling. Similar is the case with a self-balancing robot, only that the robot will fall either forward or backward. Just like how we balance a stick on our finger, we balance the robot by driving its wheels in the direction in which it is falling. What we are trying to do here is to keep the center of gravity of the robot exactly above the pivot point. To drive the motors we need some information on the state of the robot. We need to know the direction in which the robot is falling, how much the robot has tilted and the speed with which it is falling. All these information can be deduced from the readings obtained from MPU6050. We combine all these inputs and generate a signal which drives the motors and keeps the robot balanced.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project2.png" alt="Mark 1.6">
+                        <h2>MARK 1.6</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>Mark 1.6 is basically a fully wireless Bluetooth controlled robotic arm which is mounted on a 4WD chassis.</p>
+                            <p>In this, the arm is made using a 3D printer and uses NRF modules for communication. The design allows for high degrees of freedom and precise control remotely, making it suitable for bomb disposal simulations or hazardous material handling where human presence is risky.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project3.png" alt="Line Follower Bot">
+                        <h2>LINE FOLLOWER BOT</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>The line follower robot is a mobile machine that can detect and follow the line drawn on the floor. Generally, the path is predefined and can be either visible like a black line on a white surface with a high contrasted color or it can be invisible like a magnetic field.</p>
+                            <p>Definitely, this kind of robot should sense the line with its infrared ray (IR) sensors that installed under the robot. After that, the data is transmitted to the processor by specific transition buses. Hence, the processor is going to decide the proper commands and then it sends them to the driver and thus the path will be followed by the line follower robot. In this Paper, we have illustrated the process of design, implementation and testing TABAR, a small line follower robot designed for the line follower robots competition.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project4.png" alt="PlutoX">
+                        <h2>PLUTOX</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>PlutoX is an open-source programmable nano drone, by an IIT Bombay based Indian company Drona Aviation. It comes with a 720p 1MP wifi camera that can do ROS based image processing.</p>
+                            <p>The scope of application of the drone is limitless. It can be used to make image-processing based projects like traffic monitoring drone, or a trespasser detection drone. Also it can be used to collect data from places beyond human reach like mines. The drone can be controlled manually using the pluto controller application and can be operated in either tilt mode or joystick mode. It can also be controlled automatically by a script running on ROS which uses live data from camera.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project5.png" alt="3D Printing">
+                        <h2>3D PRINTING</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>3D printing is a process of making three dimensional solid objects from a digital file. The creation of a 3D printed object is achieved using additive processes.</p>
+                            <p>In an additive process an object is created by laying down successive layers of material until the object is created. Each of these layers can be seen as a thinly sliced cross-section of the object. 3D printing is the opposite of subtractive manufacturing which is cutting out / hollowing out a piece of metal or plastic with for instance a milling machine.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project6.png" alt="Automated Bot">
+                        <h2>AUTOMATED BOT</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>An automated bot that moves in the vicinity of a wall maintaining a constant distance from it, and keeping a count of the number of laps covered and the number of boxes found.</p>
+                            <p>It uses two sharp laser sensors to find the distance from the wall and implements a closed-loop feedback mechanism to correct the alignment and its distance from the wall. The same sensor is used to sense any box(parcel) on either side of it. The finishing end of a lap is marked by a black strip on the ground, which the bot senses using IR sensors and subsequently marks the lap complete and increments its count. The lap count and the box count is then displayed on a 16x2 LCD installed at the rear of the bot. The microcontroller used is Arduino uno.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project7.png" alt="Radar Navigation">
+                        <h2>RADAR NAVIGATION</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>The Radar Navigation is used in identifying, tracking (with integrated ARPA) and positioning of vessels (including one's own vessel) among other things in order to adhere to the COLREGs so as to safely navigate a ship from one point to another.</p>
+                            <p>The marine radar is classified under the x-band (10 GHz) or S-band (3GHz) frequencies. The x-band, being of higher frequency is used for a sharper image and better resolution whereas the S-band is used especially when in rain or fog as well as for identification and tracking.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project8.png" alt="Hexapod">
+                        <h2>HEXAPOD</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>Hexapods are used for moving and precision positioning, aligning and displacing loads in all six degrees of freedom, i.e., three linear and three rotational axes.</p>
+                            <p>Components used: microcontroller board Arduino nano, servo motor SG90, servo driver PCA9685, 3D printed body and moving components. The kinematics allow it to traverse uneven terrain that wheeled robots cannot handle.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel">
+                    <div class="card-top">
+                        <img src="images/projects/project9.png" alt="Drone">
+                        <h2>DRONE</h2>
+                    </div>
+                    <div class="card-scroll-area">
+                        <div class="text-content">
+                            <p>Air quality monitoring drone. It is a manually controlled drone that acquires data about the concentration of various gases in the atmosphere and reflects the same on google firebase.</p>
+                            <p>It can be used to monitor the pollution level across the city sitting from the control room or can be even used to detect the presence of toxic gases at unreachable places like mines. The aviation unit of the project consists of KK 2.1.5 Multirotor Flight Control Board, 4 1000 KV Brushless Motor (BLDC) and propellers, 4 Electronic Speed Controllers (ESC), a 6-channel tansmitter+receiver, and the 3D printed frame. The flight controlled board takes signals from the radio controller(Tx) (via the receiver(Rx)) and data of current state from the onboard accelerometer/ gyroscope sensor. The MQ2 gas sensor detects the concentration of gasses like LPG, Alcohol, Propane, Hydrogen, CO, and methane.</p>
+                        </div>
+                    </div>
+                    <div class="scroll-cue">
+                        <span>Scroll to read more</span>
+                        <i class="fa-solid fa-chevron-down bounce"></i>
+                    </div>
+                </div>
+             
+             </div> 
+
+             <div class="page-navigation">
+                <a href="index-and-about-page/about.html" class="nav-btn prev">
+                    <i class="fa-solid fa-arrow-left"></i> Previous: About
+                </a>
+                <a href="events webpage/events.html" class="nav-btn next">
+                    Next: Events <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-             <div id="box2" class="box">
-                <div class="projects-img"><img src="images/projects/project4.png" alt="img"><div class="mybox"><h2>PLUTOX</h2><p>PlutoX is an open-source programmable nano drone, by an IIT Bombay based Indian company Drona Aviation. It</p></div><span id="span4"></span><span id="mybox4id" class="mybox1"><p>comes with a 720p 1MP wifi camera that can do ROS based image processing. The scope of application of the drone is limitless. It can be used to make image-processing based projects like traffic monitoring drone, or a trespasser detection drone. Also it can be used to collect data from places beyond human reach like mines. The drone can be controlled manually using the pluto controller application and can be operated in either tilt mode or joystick mode. It can also be controlled automatically by a script running on ROS which uses live data from camera.
-</p></span><div class="btn" id="mybuttonid4" onclick="changeReadMore4()">Read More</div></div>
-                <div class="projects-img"><img src="images/projects/project5.png" alt="img"><div class="mybox"><h2>3D PRINTING</h2><p>3D printing is a process of making three dimensional solid objects from a digital file. The creation of a 3D printed object is</p></div><span id="span5"></span><span id="mybox5id" class="mybox1"><p>achieved using additive processes. In an additive process an object is created by laying down successive layers of material until the object is created. Each of these layers can be seen as a thinly sliced cross-section of the object. 3D printing is the opposite of subtractive manufacturing which is cutting out / hollowing out a piece of metal or plastic with for instance a milling machine.</p></span><div class="btn" id="mybuttonid5" onclick="changeReadMore5()">Read More</div></div>
-                 <div class="projects-img"><img src="images/projects/project6.png" alt="img"><div class="mybox"><h2>AUTOMATED BOT</h2><p>An automated bot that moves in the vicinity of a wall maintaining a constant distance from it, and keeping a count of the number of</p></div><span id="span6"></span><span id="mybox6id" class="mybox1"><p>laps covered and the number of boxes found. It uses two sharp laser sensors to find the distance from the wall and implements a closed-loop feedback mechanism to correct the alignment and its distance from the wall. The same sensor is used to sense any box(parcel) on either side of it. The finishing end of a lap is marked by a black strip on the ground, which the bot senses using IR sensors and subsequently marks the lap complete and increments its count. The lap count and the box count is then displayed on a 16x2 LCD installed at the rear of the bot. The microcontroller used is Arduino uno. DM for source code/ schematic.
-</p></span><div class="btn" id="mybuttonid6" onclick="changeReadMore6()">Read More</div></div>
-     </div>
-
-             <div id="box3" class="box">
-                 <div class="projects-img"><img src="images/projects/project7.png" alt="img"><div class="mybox"><h2>RADAR NAVIGATION</h2><p>The Radar Navigation is used in identifying, tracking (with integrated ARPA) and positioning of vessels (including one's own</p></div><span id="span7"></span><span id="mybox7id" class="mybox1"><p>vessel) among other things in order to adhere to the COLREGs so as to safely navigate a ship from one point to another. The marine radar is classified under the x-band (10 GHz) or S-band (3GHz) frequencies. The x-band, being of higher frequency is used for a sharper image and better resolution whereas the S-band is used especially when in rain or fog as well as for identification and tracking.vessel) among other things in order to adhere to the COLREGs so as to safely navigate a ship from one point to another. The marine radar is classified under the x-band (10 GHz) or S-band (3GHz) frequencies. The x-band, being of higher frequency is used for a sharper image and better resolution whereas the S-band is used especially when in rain or fog as well as for identification and tracking.</p></span></span><div class="btn" id="mybuttonid7" onclick="changeReadMore7()"> Read More</div></div>
-                 <div class="projects-img"><img src="images/projects/project8.png" alt="img"><div class="mybox"><h2>HEXAPOD</h2><p>Hexapods are used for moving and precision positioning, aligning and displacing loads in all six degrees of freedom, i.e.,</p></div><span id="span8"></span><span id="mybox8id" class="mybox1"><p>three linear and three rotational axes. components used: microcontroller board Arduino nano, servo motor SG90, servo driver PCA9685, 3D printed body and moving components. </p></span><div class="btn" id="mybuttonid8" onclick="changeReadMore8()"> Read More</div></div>
-                 <div class="projects-img"><img src="images/projects/project9.png" alt="img"><div class="mybox"><h2>DRONE</h2><p>Air quality monitoring drone. It is a manually controlled drone that acquires data about the concentration of various gases in</p></div><span id="span9"></span><span class="mybox1" id="mybox9id"><p>the atmosphere and reflects the same on google firebase. It can be used to monitor the pollution level across the city sitting from the control room or can be even used to detect the presence of toxic gases at unreachable places like mines. The aviation unit of the project consists of KK 2.1.5 Multirotor Flight Control Board, 4 1000 KV Brushless Motor (BLDC) and propellers, 4 Electronic Speed Controllers (ESC), a 6-channel tansmitter+receiver, and the 3D printed frame. The flight controlled board takes signals from the radio controller(Tx) (via the receiver(Rx)) and data of current state from the onboard accelerometer/ gyroscope sensor and passes both of them to the Atmega324PA processor, which processes and instructs the Electronic Speed Controllers (ESCs) to adjust the rotational speed of each motor to control flight orientation (up, down, backward, forward, left, right, rotation about the vertical axis). The MQ2 gas sensor detects the concentration of gasses like LPG, Alcohol, Propane, Hydrogen, CO, and methane. This data is pushed into Firebase using an ESP8266 NodeMCU which is connected to a secure wi-fi network(if available) or we can attach a portable hotspot on the drone.
-</p></span><div class="btn" id="mybuttonid9" onclick="changeReadMore9()">Read More</div></div>
-
-             </div>
+             
              <footer class="site-footer">
-        <div class="footer-container">
-            
-            <div class="footer-section social">
-                <h3>Connect With Us</h3>
-                <p>Follow the Robotics Club NIT Patna on social media for the latest updates.</p>
-                <div class="social-icons" style="justify-content: flex-start;"> <a href="https://www.facebook.com/robonitp/" target="_blank" class="social-btn facebook-btn"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/robotics_club_nitp/" target="_blank" class="social-btn instagram-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/company/robotics-club-nit-patna" target="_blank" class="social-btn linkedin-btn"><i class="fab fa-linkedin-in"></i></a>
+                <div class="footer-container">
+                    <div class="footer-section social">
+                        <h3>Connect With Us</h3>
+                        <p>Follow the Robotics Club NIT Patna on social media for the latest updates.</p>
+                        <div class="social-icons" style="justify-content: flex-start;"> 
+                            <a href="https://www.facebook.com/robonitp/" target="_blank" class="social-btn facebook-btn"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/robotics_club_nitp/" target="_blank" class="social-btn instagram-btn"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/robotics-club-nit-patna" target="_blank" class="social-btn linkedin-btn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section contact">
+                        <h3>Quick Contact</h3>
+                        <div class="footer-contact">
+                            <p><i class="fa-solid fa-envelope"></i> roboticsclub@nitp.ac.in</p>
+                            <p><i class="fa-solid fa-location-dot"></i> Ashok Rajpath, National Institute of Technology Patna <br> Incubation Center 3rd Floor - 800005</p>
+                            <p><i class="fa-solid fa-clock"></i> Mon - Fri: 5:30 PM - 8:30 PM</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="footer-section contact">
-                <h3>Quick Contact</h3>
-                <div class="footer-contact">
-                    <p><i class="fa-solid fa-envelope"></i> roboticsclub@nitp.ac.in</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Ashok Rajpath, National Institute of Technology Patna <br> Incubation Center 3rd Floor - 800005</p>
-                    <p><i class="fa-solid fa-clock"></i> Mon - Fri: 5:30 PM - 8:30 PM</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Robotics Club NIT Patna. All rights reserved.</p>
                 </div>
-            </div>
-
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Robotics Club NIT Patna. All rights reserved.</p>
-        </div>
-    </footer>
+            </footer>
             
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/main.js"></script>
     <script src="js/modals.js"></script>
-    <script src="../index-and-about-page/js/main-home&about.js"></script>
-    <script src="../index-and-about-page/js/main-home&about.js"></script>
+    <script src="index-and-about-page/js/main-home&about.js"></script>
 </body>
-</html> 
+</html>
