@@ -150,6 +150,9 @@ nav > ul li a.active {
 .footer-section { flex: 1; min-width: 280px; }
 .footer-section h3 { color: #ffffff; font-size: 1.3rem; margin-bottom: 15px; }
 .footer-section p { color: #a0a0a0; font-size: 0.9rem; margin-bottom: 20px; line-height: 1.5; }
+.footer-bottom p{
+    color: #e5e7eb;
+}
 
 /* --- SOCIAL BUTTONS --- */
 .social-icons { display: flex; justify-content: flex-start; gap: 15px; }

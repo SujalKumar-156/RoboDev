@@ -1,12 +1,56 @@
 /* ===== Global Styles ===== */
 
 /* ===== Header ===== */
-header {
-  background: #03182d;
-  color: #fff;
-  text-align: center;
-  padding: 30px 15px;
+/* ================== HEADER SECTION (Matches Projects Page) ================== */
+#header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    /* Dark Theme Overlay + Background Image */
+    /* I used a tech/event conference image here, but you can change the URL */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    
+    /* Spacing */
+    padding: 140px 20px 60px; 
+    min-height: 350px;
+    
+    /* The Neon Orange Border at bottom */
+    border-bottom: 2px solid #ff4500;
 }
+
+/* The Main "Events" Title */
+#header h1 {
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font */
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff; /* White Text */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    
+    /* Orange Glow Effect */
+    text-shadow: 0 0 15px rgba(255, 69, 0, 0.5);
+}
+
+/* The "Workshops, Competitions & Tech" Tagline */
+#header h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #ff4500; /* Neon Orange Text */
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+/* Mobile Adjustment */
+
  .site-logo {
     width: 150px;      /* change this value as needed */
     height: auto;     /* keeps proper ratio */
@@ -86,7 +130,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: large;
     text-align: center;
-    background-color: #000000;
+    background-color: #130802;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

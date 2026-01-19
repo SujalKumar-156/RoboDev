@@ -29,4 +29,231 @@
     h2 {
         font-size: 32px;
     }
+    .stack-card { flex-direction: column; height: 500px; }
+    .card-left { width: 100%; height: 200px; }
+    .card-right { width: 100%; padding: 20px; }
+    .carousel-container { height: 600px; }
+}
+
+/* --- Vertical Carousel Mobile --- */
+@media (max-width: 768px) {
+    .carousel-3d-container {
+        height: 600px; /* Increase container height for stacked content */
+    }
+
+    .stack-card {
+        flex-direction: column;
+        height: 520px; /* Taller card for mobile */
+    }
+
+    .card-visual {
+        width: 100%;
+        height: 220px;
+    }
+
+    .card-details {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .card-details h3 { font-size: 1.5rem; }
+    
+    /* Adjust translate values for mobile so they don't overlap too much */
+    .stack-card.next-1 { transform: translateY(40px) scale(0.95); }
+    .stack-card.next-2 { transform: translateY(80px) scale(0.9); }
+}
+
+@media (max-width: 900px) {
+    .card__content { flex-direction: column; }
+    
+    .card-visual {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .card-text { width: 100%; padding: 25px; }
+    .card-text h3 { font-size: 1.5rem; }
+    
+    /* Make cards taller on mobile to fit text */
+    :root {
+        --card-height: 580px;
+        --card-top-offset: 20px;
+    }
+    
+    .card { top: 10vh; }
+}
+
+@media (max-width: 600px) {
+    .section-title { font-size: 2rem; }
+    .card-number { font-size: 4rem; }
+    
+    /* Hide nav on mobile (Assuming hamburger logic is in main.js) */
+    nav { display: none; } 
+    .hamburger-menu { display: flex; }
+}
+
+/* --- 8. RESPONSIVE QUERIES --- */
+@media (max-width: 900px) {
+    .card__content { flex-direction: column; }
+    
+    .card-visual {
+        width: 100%;
+        height: 200px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .card-text { width: 100%; padding: 25px; }
+    .card-text h3 { font-size: 1.5rem; }
+    
+    /* Make cards taller on mobile to fit text */
+    :root {
+        --card-height: 580px;
+        --card-top-offset: 20px;
+    }
+    
+    .card { top: 10vh; }
+}
+
+@media (max-width: 600px) {
+    .section-title { font-size: 2rem; }
+    .card-number { font-size: 4rem; }
+    
+    /* Hide nav on mobile (Assuming hamburger logic is in main.js) */
+    nav { display: none; } 
+    .hamburger-menu { display: flex; }
+}
+@media (max-width: 768px) {
+    #header {
+        padding-top: 120px;
+        min-height: 250px;
+    }
+    #header h1 {
+        font-size: 2.5rem;
+    }
+     /* Logo Fix for Mobile */
+    .fixed-logo { left: 20px; top: 25px; }
+    .fixed-logo img { width: 100px; padding-left: 0; }
+
+    /* Stack Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-icons {
+        justify-content: center;
+    }
+    .page-navigation {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-btn {
+        width: 100%; /* Full width buttons on mobile */
+        justify-content: center;
+    }
+}
+
+ /* ================== FOOTER RESPONSIVENESS ================== */
+@media (max-width: 768px) {
+    
+    .site-footer {
+        padding: 40px 0 20px;
+    }
+
+    /* Stack columns vertically */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-section {
+        width: 100%;
+        min-width: auto;
+        padding: 0 20px; /* Add padding so text doesn't touch edges */
+    }
+
+    /* Center the Heading */
+    .footer-section h3 {
+        margin-bottom: 20px;
+    }
+
+    /* Force Social Icons to Center (Overriding inline style) */
+    .social-icons {
+        justify-content: center !important;
+        margin-bottom: 10px;
+    }
+
+    /* Center Contact Details */
+    .footer-contact p {
+        justify-content: center;
+        font-size: 0.95rem;
+    }
+    
+    /* Adjust spacing for copyright */
+    .footer-bottom {
+        margin-top: 30px;
+    }
+    /* --- Navigation Bar Mobile Mode --- */
+        .hamburger-menu {
+            display: flex; 
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100dvh; /* Full Height */
+            margin: 0;
+            padding: 0;
+            background: rgba(19, 8, 2, 0.95); /* Dark background */
+            backdrop-filter: blur(20px);
+            transform: translateY(-100%); /* Hidden by default */
+            transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+            border-radius: 0;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1003;
+        }
+
+        nav.mobile-active {
+            transform: translateY(0); /* Slide down */
+        }
+
+        nav > ul {
+            flex-direction: column;
+            height: auto;
+            gap: 20px;
+            text-align: center;
+        }
+
+        nav > ul li a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav > ul::after {
+            display: none !important;
+        }
+
+    /* --- Footer Mobile Adjustments --- */
+        .site-footer {
+            padding-top: 30px; /* Compact padding */
+            padding-bottom: 15px;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+            gap: 25px;
+        }
 }

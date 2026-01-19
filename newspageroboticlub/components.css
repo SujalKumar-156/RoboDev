@@ -195,6 +195,9 @@ nav > ul li a.active {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.footer-bottom p{
+    color: #e5e7eb;
+}
 
 /* Page Navigation Container */
 /* ================== PAGE NAVIGATION BUTTONS ================== */

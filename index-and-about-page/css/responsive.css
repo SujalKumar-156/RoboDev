@@ -131,3 +131,48 @@
         #PI{margin-top: 20px;}
 
     }
+
+
+    /* ================== FOOTER RESPONSIVENESS ================== */
+@media (max-width: 768px) {
+    
+    .site-footer {
+        padding: 40px 0 20px;
+    }
+
+    /* Stack columns vertically */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-section {
+        width: 100%;
+        min-width: auto;
+        padding: 0 20px; /* Add padding so text doesn't touch edges */
+    }
+
+    /* Center the Heading */
+    .footer-section h3 {
+        margin-bottom: 20px;
+    }
+
+    /* Force Social Icons to Center (Overriding inline style) */
+    .social-icons {
+        justify-content: center !important;
+        margin-bottom: 10px;
+    }
+
+    /* Center Contact Details */
+    .footer-contact p {
+        justify-content: center;
+        font-size: 0.95rem;
+    }
+    
+    /* Adjust spacing for copyright */
+    .footer-bottom {
+        margin-top: 30px;
+    }
+}

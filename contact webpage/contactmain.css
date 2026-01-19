@@ -110,7 +110,7 @@ nav > ul::after {
     padding: 0;
     min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/background/dddf74291e195ff6b4a9a29b0184cbf910c7d8de-2048x1121.jpg');
+                #693312;
     background-size: cover;
     background-size: cover;
     background-position: center;

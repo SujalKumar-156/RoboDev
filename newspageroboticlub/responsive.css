@@ -41,3 +41,106 @@
         justify-content: center;
     }
 }
+
+ /* ================== FOOTER RESPONSIVENESS ================== */
+@media (max-width: 768px) {
+    
+    .site-footer {
+        padding: 40px 0 20px;
+    }
+
+    /* Stack columns vertically */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .footer-section {
+        width: 100%;
+        min-width: auto;
+        padding: 0 20px; /* Add padding so text doesn't touch edges */
+    }
+
+    /* Center the Heading */
+    .footer-section h3 {
+        margin-bottom: 20px;
+    }
+
+    /* Force Social Icons to Center (Overriding inline style) */
+    .social-icons {
+        justify-content: center !important;
+        margin-bottom: 10px;
+    }
+
+    /* Center Contact Details */
+    .footer-contact p {
+        justify-content: center;
+        font-size: 0.95rem;
+    }
+    
+    /* Adjust spacing for copyright */
+    .footer-bottom {
+        margin-top: 30px;
+    }
+    /* --- Navigation Bar Mobile Mode --- */
+        .hamburger-menu {
+            display: flex; 
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100vw;
+            height: 100dvh; /* Full Height */
+            margin: 0;
+            padding: 0;
+            background: rgba(19, 8, 2, 0.95); /* Dark background */
+            backdrop-filter: blur(20px);
+            transform: translateY(-100%); /* Hidden by default */
+            transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+            border-radius: 0;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1003;
+        }
+
+        nav.mobile-active {
+            transform: translateY(0); /* Slide down */
+        }
+
+        nav > ul {
+            flex-direction: column;
+            height: auto;
+            gap: 20px;
+            text-align: center;
+        }
+
+        nav > ul li a {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        nav > ul::after {
+            display: none !important;
+        }
+
+    /* --- Footer Mobile Adjustments --- */
+        .site-footer {
+            padding-top: 30px; /* Compact padding */
+            padding-bottom: 15px;
+        }
+
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+            gap: 25px;
+        }
+}
